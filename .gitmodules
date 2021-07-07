@@ -1,0 +1,3 @@
+[submodule "dependencies/slimc-kicad-libraries"]
+	path = dependencies/slimc-kicad-libraries
+	url = https://github.com/slimcdk/slimc-kicad-libraries.git
