@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Driver_Motor_Local)(type KiCad)(uri /home/christian/Nextcloud/Projects/smart-home-projects/roller-shades/dependencies/kicad-lib/Driver_Motor_Local.pretty)(options "")(descr ""))
+)

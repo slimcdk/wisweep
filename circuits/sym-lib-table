@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name Driver_Motor_Local)(type Legacy)(uri /home/christian/Nextcloud/Projects/smart-home-projects/roller-shades/dependencies/kicad-lib/Driver_Motor_Local.lib)(options "")(descr ""))
+  (lib (name Sensor_Magnetic_Local)(type Legacy)(uri /home/christian/Nextcloud/Projects/smart-home-projects/roller-shades/dependencies/kicad-lib/Sensor_Magnetic_Local.lib)(options "")(descr ""))
+  (lib (name Regulator_Switching_Local)(type Legacy)(uri /home/christian/Nextcloud/Projects/smart-home-projects/roller-shades/dependencies/kicad-lib/Regulator_Switching_Local.lib)(options "")(descr ""))
+)
