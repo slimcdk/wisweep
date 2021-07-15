@@ -1,5 +1,6 @@
 (sym_lib_table
-  (lib (name Slimc_Sensor_Magnetic)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/libraries/Sensor_Magnetic.lib)(options "")(descr ""))
-  (lib (name Slimc_Regulator_Switching)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/libraries/Regulator_Switching.lib)(options "")(descr ""))
-  (lib (name Slimc_Driver_Motor)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/libraries/Driver_Motor.lib)(options "")(descr ""))
+  (lib (name Slimc_Sensor_Magnetic)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/symbols/Slimc_Sensor_Magnetic.lib)(options "")(descr ""))
+  (lib (name Slimc_Regulator_Switching)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/symbols/Slimc_Regulator_Switching.lib)(options "")(descr ""))
+  (lib (name Slimc_Interface_USB)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/symbols/Slimc_Interface_USB.lib)(options "")(descr ""))
+  (lib (name Slimc_Driver_Motor)(type Legacy)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/symbols/Slimc_Driver_Motor.lib)(options "")(descr ""))
 )

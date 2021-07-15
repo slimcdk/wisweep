@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name Slimc_Driver_Motor)(type KiCad)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/footprints/Driver_Motor_Local.pretty)(options "")(descr ""))
+  (lib (name Slimc_Driver_Motor)(type KiCad)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/footprints/Slimc_Driver_Motor.pretty)(options "")(descr ""))
+  (lib (name Slimc_Interface_USB)(type KiCad)(uri ${KIPRJMOD}/../dependencies/slimc-kicad-libraries/footprints/Slimc_Interface_USB.pretty)(options "")(descr ""))
+  (lib (name Slimc_LED_SMD)(type KiCad)(uri /home/christian/Nextcloud/Projects/wifi-stepper-servo/dependencies/slimc-kicad-libraries/footprints/Slimc_LED_SMD.pretty)(options "")(descr ""))
 )
