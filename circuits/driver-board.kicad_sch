@@ -2530,7 +2530,7 @@
   (no_connect (at 101.6 152.4) (uuid a49e8613-3cd2-48ed-8977-6bb5023f7722))
   (no_connect (at 87.63 270.51) (uuid a7fc0812-140f-4d96-9cd8-ead8c1c610b1))
   (no_connect (at 347.98 260.35) (uuid a85aeca1-0921-45df-b639-c362fbdb7f4f))
-  (no_connect (at 347.98 264.16) (uuid a85aeca1-0921-45df-b639-c362fbdb7f4f))
+  (no_connect (at 347.98 264.16) (uuid a85aeca1-0921-45df-b639-c362fbdb7f50))
   (no_connect (at 215.9 63.5) (uuid ae77c3c8-1144-468e-ad5b-a0b4090735bd))
   (no_connect (at 215.9 66.04) (uuid c3c499b1-9227-4e4b-9982-f9f1aa6203b9))
   (no_connect (at 347.98 204.47) (uuid d19c7ae9-65fc-4ecd-9456-7cba1462ddbe))
@@ -6439,7 +6439,7 @@
     (property "Datasheet" "" (id 3) (at 318.77 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c7bfb389-ee13-476d-a6eb-502e10154a3e))
+    (pin "1" (uuid c7bfb389-ee13-476d-a6eb-502e10154a3f))
   )
 
   (symbol (lib_id "power:GND") (at 323.85 124.46 0) (unit 1)
