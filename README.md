@@ -74,7 +74,7 @@ ROHM Power Management https://www.rohm.com/documents/11303/7418114/SF2020_EN_P30
 Clone repository and fetch submodules
 ```bash
 $ git clone git@github.com:slimcdk/esp-stepper-servo.git
-$ cd esp-stepper-servo
+$ cd esp-stepper-servo/
 $ git submodule update --init --recursive
 ```
 
