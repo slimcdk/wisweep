@@ -28,7 +28,7 @@ Supplier:
 
 
 ### Rotary encoder
-**AS5600** \
+**AS5601** \
 Datasheet:
 Supplier:
 
@@ -49,8 +49,6 @@ Supplier:
 **BA33DD0WHFP** \
 Datasheet:
 Supplier:
-
-
 
 **BD33FC0WEFJ** \
 Datasheet: https://fscdn.rohm.com/en/products/databook/datasheet/ic/power/linear_regulator/bdxxfc0wefj-e.pdf \
@@ -73,9 +71,7 @@ ROHM Power Management https://www.rohm.com/documents/11303/7418114/SF2020_EN_P30
 
 Clone repository and fetch submodules
 ```bash
-$ git clone git@github.com:slimcdk/esp-stepper-servo.git
-$ cd esp-stepper-servo/
-$ git submodule update --init --recursive
+$ git clone --recurse-submodules git@github.com:slimcdk/esp-stepper-servo.git
 ```
 
 ### Versioning
