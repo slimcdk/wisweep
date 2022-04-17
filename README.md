@@ -71,6 +71,13 @@ ROHM Power Management https://www.rohm.com/documents/11303/7418114/SF2020_EN_P30
 ## Contribution
 
 
+Clone repository and fetch submodules
+```bash
+$ git clone git@github.com:slimcdk/esp-stepper-servo.git
+$ cd esp-stepper-servo
+$ git submodule update --init --recursive
+```
+
 ### Versioning
 
 Revisions are controlled through git tags such any production easily can be traced back to a commit containing everything. Complete sets of compatible schematics, firmwares, 3D models, documentation will all stay together under same tag in the source history.
