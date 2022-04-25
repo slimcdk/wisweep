@@ -115,6 +115,11 @@ Firmware updates to older board revisions will however get out of sync at some p
 
 ## Todos
 
+* GPIO46 to reset circuitry according to TABLE 9: Strapping Pins https://www.espressif.com/sites/default/files/documentation/esp32-s3_datasheet_en.pdf#page=22
+
+* CLC filter on analog power pins https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=8
+
+* External clock https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=11
 ### First prototype
 * Antenna design with ceramic SMD antenna
 * SR latch for TMC2209 diag pin (stallGuard)
