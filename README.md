@@ -91,6 +91,11 @@ TMC2209:
 USB4120-03-C:
 * https://www.digikey.dk/da/products/detail/gct/USB4120-03-C/13547390?s=N4IgTCBcDaIKoGUBCAWAjGADCAugXyA
 
+
+Reference modules
+* https://www.wemos.cc/en/latest/c3/c3_mini.html
+* https://www.wemos.cc/en/latest/s2/s2_mini.html
+
 ## Contribution
 
 

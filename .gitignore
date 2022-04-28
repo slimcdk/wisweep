@@ -51,7 +51,6 @@
 *.svgz
 
 # Portable Document Format
-#*.pdf
 
 # X BitMap
 *.xbm
@@ -179,3 +178,5 @@ $RECYCLE.BIN/
 
 
 *.zip
+
+docs/src/*
