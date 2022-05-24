@@ -1,0 +1,52 @@
+# This KiBot script generates common documentation files for a two layer board design,
+# including PDF schematics, PDF front and back board images, an interactive HTML BOM,
+# JPEG renders of the PCB, and a STEP 3D model. Note that the STEP 3D model generation
+# will throw a ton of warnings and errors but does actually work.
+kibot:
+  version: 1
+  
+outputs:
+  - name: "print_front"
+    comment: "PDF - front copper and user drawings"
+    type: pdf_pcb_print
+    dir: "PDFs"
+    layers:
+      - layer: F.Cu
+      - layer: Dwgs.User
+
+  - name: "print_bottom"
+    comment: "PDF - back copper and user drawings"
+    type: pdf_pcb_print
+    dir: "PDFs"
+    layers:
+      - layer: B.Cu
+      - layer: Dwgs.User
+
+  - name: pcb_top
+    comment: "Renders - top"
+    type: pcbdraw
+    dir: "Renders"
+    options:
+      output: "%f-%i.%x"
+      format: jpg
+      show_components: none
+      dpi: 600
+
+  - name: pcb_bot
+    comment: "Renders - bottom"
+    type: pcbdraw
+    dir: "Renders"
+    options:
+      output: "%f-%i.%x"
+      format: jpg
+      bottom: True
+      show_components: none
+      dpi: 600
+
+  - name: step
+    comment: "Renders - 3D model (STEP)"
+    type: step
+    dir: "Renders"
+    options:
+      metric_units: true
+      origin: 85,66.2

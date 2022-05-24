@@ -1,0 +1,16 @@
+# This script is called by the .github/workflows/release.yml workflow to generate documentation
+# (PDFs, interactive BOMs, board images) and fabrication files for JLCPCB and PCBWay.
+kibot:
+  version: 1
+
+preflight:
+  run_erc: true
+
+global:
+  # Sets the default output filename for all generated files. You likely don't have to change this.
+  output: "%f-%i.%x"
+
+# This imports the KiBot scripts that actuall do all the generation. If you want to
+# generate different things/more things then change these to point to other .kibot.yaml files.
+import:
+  - includes/schematic/documentation.kibot.yaml

@@ -1,0 +1,29 @@
+# This KiBot script generates common documentation files for a two layer board design,
+# including PDF schematics, PDF front and back board images, an interactive HTML BOM,
+# JPEG renders of the PCB, and a STEP 3D model. Note that the STEP 3D model generation
+# will throw a ton of warnings and errors but does actually work.
+kibot:
+  version: 1
+
+outputs:
+  - name: "print_sch"
+    comment: "PDF - print schematic"
+    type: pdf_sch_print
+    dir: Schematic
+
+  - name: "standard_bom"
+    comment: "Standard csv BOM for upload to Octopart or similar"
+    type: bom
+    dir: Schematic
+    options:
+      blacklist: "DNF*"
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
+      columns:
+        - Part
+        - field: manf
+          name: Manufacturer
+        - References
+        - Quantity Per PCB

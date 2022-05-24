@@ -1,0 +1,37 @@
+name: Generate Backpack Board Project
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Backpack bundle"
+        required: true
+        default: "backpack-bundle"
+
+jobs:
+  generation:
+    runs-on: ubuntu-latest
+
+    # These are all the steps that generate the files.
+    steps:
+      # Check out the files
+      - uses: actions/checkout@v3
+        submodules: true
+
+      # Install the zip command line tool to package up the output
+      - name: Install zip
+        uses: montudor/action-zip@v1
+
+      # Zip all the documentation. Any files in the PCBWay, PDFs, Renders, and Schematic subfolder
+      # are automatically included.
+      - name: Zip project template
+        run: zip -qq -r backpack-template.zip ./backpack-template/
+        working-directory: .
+
+      # Upload all the zip files to the release. 
+      - name: Upload release files
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: backpack-template.zip
