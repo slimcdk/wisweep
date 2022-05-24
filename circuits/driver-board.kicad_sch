@@ -6,9 +6,8 @@
 
   (title_block
     (title "esp-stepper-servo")
-    (date "2022-04-28")
+    (date "%%date%%")
     (rev "v0.0.1")
-    (company "slimc")
     (comment 1 "github.com/slimcdk/esp-stepper-servo")
   )
 
