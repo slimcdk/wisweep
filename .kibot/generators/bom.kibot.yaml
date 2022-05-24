@@ -1,0 +1,8 @@
+kibot:
+  version: 1
+
+outputs:
+  - type: bom
+    name: Bill of Materials
+    dir: exports
+

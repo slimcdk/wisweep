@@ -5,6 +5,7 @@ kibot:
 
 preflight:
   run_erc: true
+  run_drc: false
 
 global:
   # Sets the default output filename for all generated files. You likely don't have to change this.
@@ -13,4 +14,6 @@ global:
 # This imports the KiBot scripts that actuall do all the generation. If you want to
 # generate different things/more things then change these to point to other .kibot.yaml files.
 import:
-  - includes/schematic/documentation.kibot.yaml
+  - generators/pcb-docs.kibot.yaml
+  - generators/pcb-exports.kibot.yaml
+  - generators/pcb-gerbers.kibot.yaml

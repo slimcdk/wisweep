@@ -76,6 +76,7 @@
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
+*.kicad_pro-bak
 *.kicad_prl
 *.sch-bak
 *~
@@ -180,3 +181,4 @@ $RECYCLE.BIN/
 *.zip
 
 docs/src/*
+exports/*
