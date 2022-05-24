@@ -20,17 +20,7 @@ on:
 jobs:
   Documentation:
     env:
-      # Set this to the base filename of your project.
-      BaseFileName: circuits/driver-board
-      # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
-      Timezone: Europe/Copenhagen
-      # Set this to the output folder for all of the generated files. Unless you have a very
-      # good reason to change this you should leave it as KiBotOutput.
-      OutputFolder: exports
-      # Set this to the version to include in the schematic and PCB. Since this
-      # script runs outside of the release process it can't pull a version
-      # number automatically from GitHub.
-      Version: pre-release
+      timezone: Europe/Copenhagen
     runs-on: ubuntu-latest
 
     # These are all the steps that generate the files.
@@ -43,12 +33,12 @@ jobs:
       # Get the current date and time, in the timezone specified above, for use later.
       - name: Get current date and time
         id: date
-        run: echo "::set-output name=date::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d %T')"
+        run: echo "::set-output name=date::$(TZ='${{ env.timezone }}' date +'%Y-%m-%d %T')"
 
       # Get the current date
       - name: Get current date
         id: date_only
-        run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+        run: echo "::set-output name=date_only::$(TZ='${{ env.timezone }}' date +'%Y-%m-%d')"
 
       # Do a string replacement in the schematic file to set the version and date.
       # Any instance of %%version%% in the schematic gets replaced with the release version.
@@ -73,13 +63,13 @@ jobs:
         uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: .kibot/sch-outputs.kibot.yaml
-          dir: ${{ env.OutputFolder }}
-          schema: ${{ env.BaseFileName }}.kicad_sch
-          board: ${{ env.BaseFileName }}.kicad_pcb
+          dir: exports
+          schema: circuits/driver-board.kicad_sch
+          board: circuits/driver-board.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
-          path: ${{ env.OutputFolder }}/**
+          name: driver-board-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+          path: exports/**
