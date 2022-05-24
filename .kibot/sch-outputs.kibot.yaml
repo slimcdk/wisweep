@@ -16,6 +16,3 @@ global:
 import:
   - generators/sch-docs.kibot.yaml
   - generators/bom.kibot.yaml
-
-
-  
