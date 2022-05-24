@@ -74,7 +74,7 @@ jobs:
         with:
           config: .kibot/sch-outputs.kibot.yaml
           dir: ${{ env.OutputFolder }}
-          schema: ${{ env.BaseFileName }}.kicad_pcb
+          schema: ${{ env.BaseFileName }}.kicad_sch
           board: ${{ env.BaseFileName }}.kicad_pcb
 
       # Archive all the artifacts from output and attach to the action's results.
