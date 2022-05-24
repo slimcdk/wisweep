@@ -21,7 +21,7 @@ jobs:
   Documentation:
     env:
       # Set this to the base filename of your project.
-      BaseFileName: esp-stepper
+      BaseFileName: circuits/driver-board
       # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
       Timezone: Europe/Copenhagen
       # Set this to the output folder for all of the generated files. Unless you have a very
