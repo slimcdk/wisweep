@@ -28,11 +28,14 @@ jobs:
           schema: circuits/driver-board.kicad_sch
           board: circuits/driver-board.kicad_pcb
 
+      - name: Set ./exports ownership to current user
+        run: sudo chown -R $(id -u):$(id -g) ./exports
+
       - uses: actions/checkout@v3
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add exports
+          git add ./exports
           git commit -m "workflow generated exports"
           git push
 
