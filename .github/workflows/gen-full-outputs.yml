@@ -1,0 +1,46 @@
+name: "KiBot - Generate Schematic Outputs"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Design version"
+        required: true
+        default: "pre-release"
+
+
+jobs:
+  documentation:
+    env:
+      timezone: Europe/Copenhagen
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Generate schematic documentation
+        uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          config: .kibot/full-outputs.kibot.yaml
+          dir: .
+          schema: circuits/driver-board.kicad_sch
+          board: circuits/driver-board.kicad_pcb
+
+      - run: sudo chown -R $(id -u):$(id -g) ./exports
+
+      # Archive all the artifacts from output and attach to the action's results.
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: driver-board-${{ github.event.inputs.version }}
+          path: exports/**
+
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add exports/pcb/*.{pdf,jpg} exports/schematic/*.{pdf,svg} exports/renders/*.png exports/driver-board-3D.step
+          git commit -m "workflow generated exports"
+          git push
+

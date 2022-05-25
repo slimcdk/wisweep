@@ -1,0 +1,18 @@
+name: "ESPHome config validation"
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  firmware:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - uses: esphome/build-action@v1
+        with:
+          yaml_file: firmwares/esphome/esphome.yaml
