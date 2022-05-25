@@ -7,8 +7,8 @@
   (title_block
     (title "ESP Stepper Servo")
     (date "${date}")
-    (rev "${version}")
-    (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit_long}")
+    (rev "${commit}")
+    (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit}")
     (comment 2 "github.com/slimcdk/esp-stepper-servo")
   )
 

@@ -1,13 +1,10 @@
-# This KiBot script generates gerbers, drill, bom, and position files for submitting
-# two layer boards to JLCPCB.
 kibot:
   version: 1
 
 outputs:
   - name: JLCPCB_gerbers
-    comment: "Gerbers - JLCPCB"
     type: gerber
-    dir: JLCPCB
+    dir: exports/gerbers
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -35,9 +32,8 @@ outputs:
       - Edge.Cuts
 
   - name: JLCPCB_drill
-    comment: "Drill - JLCPCB"
     type: excellon
-    dir: JLCPCB
+    dir: exports/gerbers
     options:
       metric_units: false
       minimal_header: false

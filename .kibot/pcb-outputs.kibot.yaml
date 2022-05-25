@@ -1,20 +1,19 @@
-# This script is called by the .github/workflows/release.yml workflow to generate documentation
-# (PDFs, interactive BOMs, board images) and fabrication files for JLCPCB and PCBWay.
 kibot:
   version: 1
 
 preflight:
-  run_erc: true
+  run_erc: false
   run_drc: false
+  set_text_variables:
+    - name: date
+      command: git log -1 --format='%as'
+    - name: commit
+      command: git log -1 --pretty=format:%h
 
 global:
-  # Sets the default output filename for all generated files. You likely don't have to change this.
   output: "%f-%i.%x"
 
-# This imports the KiBot scripts that actuall do all the generation. If you want to
-# generate different things/more things then change these to point to other .kibot.yaml files.
 import:
   - generators/pcb-docs.kibot.yaml
-  #- generators/pcb-exports.kibot.yaml
-  #- generators/pcb-gerbers.kibot.yaml
-  #- generators/bom.kibot.yaml
+  - generators/pcb-gerbers.kibot.yaml
+  - generators/bom.kibot.yaml

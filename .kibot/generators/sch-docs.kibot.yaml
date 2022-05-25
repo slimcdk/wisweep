@@ -2,17 +2,15 @@ kibot:
   version: 1
 
 
-
-
 outputs:
   - type: pdf_sch_print
     name: Schematic PDF
     options:
       monochrome: true
-    dir: exports
+    dir: exports/schematic
 
   - type: svg_sch_print
     name: Schematic SVG
     options:
       monochrome: true
-    dir: exports
+    dir: exports/schematic

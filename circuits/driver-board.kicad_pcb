@@ -6,11 +6,11 @@
 
   (paper "A5")
   (title_block
-    (title "esp-stepper-servo")
-    (date "2022-04-28")
-    (rev "0.0.1")
-    (company "slimc")
-    (comment 1 "github.com/slimcdk/esp-stepper-servo")
+    (title "ESP Stepper Servo")
+    (date "${date}")
+    (rev "${commit}")
+    (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit}")
+    (comment 2 "github.com/slimcdk/esp-stepper-servo")
   )
 
   (layers
@@ -93,6 +93,12 @@
       (outputdirectory "../docs")
     )
   )
+
+  (property "DATE_REPLACE" "2022-05-25")
+  (property "commit_long" "abc5fc4a894f32302d7b4985fbf801590768d1d1")
+  (property "commit_short" "abc5fc4")
+  (property "date" "2022-05-26")
+  (property "version" "577a51b")
 
   (net 0 "")
   (net 1 "GND")
