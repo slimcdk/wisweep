@@ -8,7 +8,7 @@ Compact WiFi and Bluetooth (5.0) NEMA-17 stepper controller featuring stall dete
   <source media="(prefers-color-scheme: light)" srcset="exports/driver-board-schematic.svg">
   <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="exports/driver-board-schematic.svg">
 </picture>
-<a href="exports/driver-board-schematic.pdf">Open schematic PDF</a>
+<a href="exports/schematic/driver-board-schematic.pdf">Open schematic PDF</a>
 
 
 

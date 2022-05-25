@@ -5,7 +5,7 @@
 	"name": "KiCad/KiBot",
 	"context": "..",
 	"dockerFile": "./Dockerfile",
-	//"remoteUser": "christian",
+	//"remoteUser": "vscode",
 	"settings": {
 	},
 	"extensions": [
