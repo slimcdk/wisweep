@@ -1,0 +1,18 @@
+font:
+  - id: roboto_thin
+    file: "common/fonts/Roboto/Roboto-Thin.ttf"
+
+  - id: roboto_regular
+    file: "common/fonts/Roboto/Roboto-Regular.ttf"
+
+  - id: roboto_medium
+    file: "common/fonts/Roboto/Roboto-Medium.ttf"
+
+  - id: roboto_light
+    file: "common/fonts/Roboto/Roboto-Light.ttf"
+
+  - id: roboto_bold
+    file: "common/fonts/Roboto/Roboto-Bold.ttf"
+  
+  - id: roboto_black
+    file: "common/fonts/Roboto/Roboto-Black.ttf"

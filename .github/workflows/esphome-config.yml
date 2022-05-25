@@ -5,7 +5,7 @@ on:
 
 
 jobs:
-  firmware:
+  validate:
     runs-on: ubuntu-latest
 
     steps:

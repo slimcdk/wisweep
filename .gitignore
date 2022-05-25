@@ -4,6 +4,8 @@
 
 ### Images ###
 # JPEG
+# *.jpg
+# *.jpeg
 *.jpe
 *.jif
 *.jfif
@@ -45,8 +47,8 @@
 *.tif
 
 # Scalable Vector Graphics
-*.svg
-*.svgz
+#*.svg
+#*.svgz
 
 # Portable Document Format
 

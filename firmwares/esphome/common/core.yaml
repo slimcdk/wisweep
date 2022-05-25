@@ -1,0 +1,30 @@
+esphome:
+  name: ${hostid}
+  platform: ${node_platform}
+  board: ${node_board}
+  comment: ${comment}
+  arduino_version: recommended
+
+
+logger:
+#  level: DEBUG
+#  esp8266_store_log_strings_in_flash: false
+
+
+api:
+  reboot_timeout: 43200s
+
+
+ota:
+
+
+wifi:
+  id: ${hostid}_wifi
+  ssid: !secret WIFI_SSID
+  password: !secret WIFI_PSK
+  fast_connect: true
+  ap:
+    ssid: ${hostname} Hotspot
+    password: !secret WIFI_PSK
+  domain: .local
+  use_address: ${hostid}.local
