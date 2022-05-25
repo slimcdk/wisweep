@@ -9,7 +9,6 @@
     (date "${date}")
     (rev "${commit}")
     (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit}")
-    (comment 2 "github.com/slimcdk/esp-stepper-servo")
   )
 
   (lib_symbols

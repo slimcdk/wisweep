@@ -10,7 +10,6 @@
     (date "${date}")
     (rev "${commit}")
     (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit}")
-    (comment 2 "github.com/slimcdk/esp-stepper-servo")
   )
 
   (layers
@@ -95,6 +94,7 @@
   )
 
   (property "DATE_REPLACE" "2022-05-25")
+  (property "commit" "abc5fc4")
   (property "commit_long" "abc5fc4a894f32302d7b4985fbf801590768d1d1")
   (property "commit_short" "abc5fc4")
   (property "date" "2022-05-26")
