@@ -181,4 +181,4 @@ $RECYCLE.BIN/
 *.zip
 
 docs/src/*
-exports/*
+# exports/*

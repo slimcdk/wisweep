@@ -3,6 +3,30 @@
 Compact WiFi and Bluetooth (5.0) NEMA-17 stepper controller featuring stall detection and silent operation. Supply 5-20V upto 5A using USB-C Power Delivery or through header connector. Easily embeddable and extendable with backpack boards for specialized operations.
 
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="exports/driver-board-schematic.svg">
+  <source media="(prefers-color-scheme: light)" srcset="exports/driver-board-schematic.svg">
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="exports/driver-board-schematic.svg">
+</picture>
+<a href="exports/driver-board-schematic.pdf">Open schematic PDF</a>
+
+
+
+## Contribution
+
+Clone repository and fetch submodules
+```bash
+$ git clone --recurse-submodules git@github.com:slimcdk/esp-stepper-servo.git
+```
+
+### Versioning
+
+Revisions are controlled through git tags such any production easily can be traced back to a commit containing everything. Complete sets of compatible schematics, firmwares, 3D models, documentation will all stay together under same tag in the source history.
+
+Firmware updates to older board revisions will however get out of sync at some point.
+
+
+
 
 ---
 ## Programming
@@ -96,25 +120,7 @@ Reference modules
 * https://www.wemos.cc/en/latest/c3/c3_mini.html
 * https://www.wemos.cc/en/latest/s2/s2_mini.html
 
-## Contribution
 
-
-Clone repository and fetch submodules
-```bash
-$ git clone --recurse-submodules git@github.com:slimcdk/esp-stepper-servo.git
-```
-
-### Versioning
-
-Revisions are controlled through git tags such any production easily can be traced back to a commit containing everything. Complete sets of compatible schematics, firmwares, 3D models, documentation will all stay together under same tag in the source history.
-
-Firmware updates to older board revisions will however get out of sync at some point.
-
-
-## Software uses
-* https://www.kicad.org/
-* https://www.freecadweb.org/
-* https://github.com/espressif/kicad-libraries
 
 
 
@@ -125,37 +131,9 @@ Firmware updates to older board revisions will however get out of sync at some p
 * CLC filter on analog power pins https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=8
 
 * External clock https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=11
-### First prototype
-* Antenna design with ceramic SMD antenna
-* SR latch for TMC2209 diag pin (stallGuard)
-* WS2812B angled footprint and package
-* Reset (perhaps GPIO00) button circuitry
-* Delayed boot of ESP (RC logic)
-* ESP32-S3 external clock
-* ESP32-S3 GPIO selection
-    * I2C (remember 4k7R pull-up)
-    * UART for TMC2209
-    * LEDC for RGB LED
-    * Encoder AB interrupts
-    * TMC enable/step/direction
-    * TMC diag (from SR latch)
-* Voltage regulator decoupling
-    * Transient capacitors
-* Exposed GPIOs in expansion headers
-    * Programming headers
-* TMC2209 current resistors
 
 
-### Second prototype
-* USB-to-UART C2102N circuitry with proper boot sequence
-    * Voltage divider on C2102 VBUS?
-* USB Power Delivery (STUSB4500) in conjunction with USB-to-UART IC
-    * Data line logics?
-    * Data passthrough from STUSB4500?
-* Exposed set GPIOs in expansion headers
-* Voltage protection
-    * Reverse voltage
-    * Overvoltage
-    * Overcurrent
-* GPIO00 button
-
+## Software uses
+* https://www.kicad.org/
+* https://www.freecadweb.org/
+* https://github.com/espressif/kicad-libraries

@@ -5,10 +5,11 @@
   (paper "A2")
 
   (title_block
-    (title "esp-stepper-servo")
-    (date "%%date%%")
-    (rev "v0.0.1")
-    (comment 1 "github.com/slimcdk/esp-stepper-servo")
+    (title "ESP Stepper Servo")
+    (date "${date}")
+    (rev "${version}")
+    (comment 1 "github.com/slimcdk/esp-stepper-servo/tree/${commit_long}")
+    (comment 2 "github.com/slimcdk/esp-stepper-servo")
   )
 
   (lib_symbols

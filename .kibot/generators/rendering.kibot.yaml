@@ -1,2 +1,11 @@
 kibot:
   version: 1
+  
+outputs:
+  - name: step
+    comment: "Renders - 3D model (STEP)"
+    type: step
+    dir: "Renders"
+    options:
+      metric_units: true
+      origin: 85,66.2
