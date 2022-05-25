@@ -1,4 +1,4 @@
-name: "KiBot - Generate Schematic Outputs"
+name: "KiBot - Generate Full Outputs"
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ on:
 
 
 jobs:
-  documentation:
+  complete-bundle:
     env:
       timezone: Europe/Copenhagen
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
         with:
           submodules: true
 
-      - name: Generate schematic documentation
+      - name: Generate full documentation
         uses: INTI-CMNB/KiBot@v2_k6
         with:
           config: .kibot/full-outputs.kibot.yaml
