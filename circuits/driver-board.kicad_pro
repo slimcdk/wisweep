@@ -434,7 +434,7 @@
   ],
   "text_variables": {
     "DATE_REPLACE": "2022-05-25",
-    "commit": "abc5fc4",
+    "commit": "6f3dba0",
     "commit_long": "abc5fc4a894f32302d7b4985fbf801590768d1d1",
     "commit_short": "abc5fc4",
     "date": "2022-05-26",

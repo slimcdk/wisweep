@@ -8,13 +8,36 @@ outputs:
     dir: exports
     options:
       metric_units: true
-      origin: 85,66.2
       
-  - name: render
+  - name: render top
     type: render_3d
     dir: exports/renders
     options:
-      height: 1080
-      width: 1920
+      height: 1000
+      width: 1200
       download: true
-      # ray_tracing: true
+      ray_tracing: true
+      view: top
+
+  - name: render bottom
+    type: render_3d
+    dir: exports/renders
+    options:
+      height: 1000
+      width: 1200
+      download: true
+      ray_tracing: true
+      view: bottom
+
+  - name: render angled
+    type: render_3d
+    dir: exports/renders
+    options:
+      height: 1000
+      width: 1200
+      download: true
+      ray_tracing: true
+      view: front
+      rotate_x: -4
+      rotate_y: 0
+      rotate_z: -4
