@@ -56,8 +56,8 @@ jobs:
         run: sudo chown -R $(id -u):$(id -g) ./exports
 
       - name: Get current date and time
-        id: date
-        run: echo "::set-output name=date::$(date --iso-8601=minutes)"
+        id: gitstamp
+        run: echo "::set-output name=datehash::$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)"
 
       # TODO: dynamic expand all images with date and commit hash
       # - name: Copy renders to static folder
@@ -71,7 +71,7 @@ jobs:
 
       - name: Commit renders to static folder
         run: |
-          cp -r exports/renders static/images
+          cp -r exports/renders/*.png static/images/
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add -f static/images
@@ -81,7 +81,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: driver-board-${{ steps.date.outputs.date }}
+          name: driver-board-${{ steps.gitstamp.outputs.datehash }}
           path: |
             exports/pcb/*.{pdf,jpg}
             exports/schematic/*.{pdf,svg}
