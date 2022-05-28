@@ -44,7 +44,7 @@ jobs:
       - run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add static/images/*.png
+          git add -f static/images/*.png
           git commit -m "latest renders"
           git push
 
