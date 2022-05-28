@@ -68,7 +68,6 @@ jobs:
       #     LABEL="`${{ steps.date.outputs.date }}`\n`git rev-parse --short HEAD`"
       #     convert -background black -fill white -pointsize 12 -font "$FONT" -size 300x36 label:"$LABEL" -bordercolor black -border 3 exports/renders/*.png +swap -append exports/renders/*.png
 
-
       - name: Commit renders to static folder
         run: |
           cp -r exports/renders/*.png static/images/
@@ -89,3 +88,6 @@ jobs:
             exports/schematic/*.svg
             exports/renders/*.png
             exports/driver-board-3D.step
+
+
+            dependencies/slimc-kicad-libraries/slimc/3d-packages/Ignion_NN01-102.models/NN01-102.step
