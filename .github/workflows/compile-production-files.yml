@@ -6,6 +6,36 @@ on:
 
 
 jobs:
+
+  # bundle-backpack-board:
+  #   runs-on: ubuntu-latest
+
+  #   # These are all the steps that generate the files.
+  #   steps:
+  #     # Check out the files
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         submodules: true
+
+  #     # Install the zip command line tool to package up the output
+  #     - name: Install zip
+  #       uses: montudor/action-zip@v1
+
+  #     # Zip all the documentation. Any files in the PCBWay, PDFs, Renders, and Schematic subfolder
+  #     # are automatically included.
+  #     - name: Zip project template
+  #       run: zip -qq -r backpack-template.zip ./backpack-template/
+  #       working-directory: .
+
+  #     # Upload all the zip files to the release. 
+  #     - name: Upload release files
+  #       uses: softprops/action-gh-release@v1
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #       with:
+  #         files: backpack-template.zip
+
+
   compile-production-files:
     runs-on: ubuntu-latest
 
@@ -38,13 +68,13 @@ jobs:
       #     LABEL="`${{ steps.date.outputs.date }}`\n`git rev-parse --short HEAD`"
       #     convert -background black -fill white -pointsize 12 -font "$FONT" -size 300x36 label:"$LABEL" -bordercolor black -border 3 exports/renders/*.png +swap -append exports/renders/*.png
 
-      - name: Copy renders to static folder
-        run: cp -r exports/renders static/images
 
-      - run: |
+      - name: Commit renders to static folder
+        run: |
+          cp -r exports/renders static/images
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -f static/images/*.png
+          git add -f static/images
           git commit -m "latest renders"
           git push
 
