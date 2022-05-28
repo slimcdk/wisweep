@@ -181,7 +181,7 @@ $RECYCLE.BIN/
 *.zip
 
 docs/src/*
-# exports/*
+exports/*
 
 *.ogv
 *.log

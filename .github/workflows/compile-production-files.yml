@@ -83,7 +83,9 @@ jobs:
         with:
           name: driver-board-${{ steps.gitstamp.outputs.datehash }}
           path: |
-            exports/pcb/*.{pdf,jpg}
-            exports/schematic/*.{pdf,svg}
+            exports/pcb/*.pdf
+            exports/pcb/*.jpg
+            exports/schematic/*.pdf
+            exports/schematic/*.svg
             exports/renders/*.png
             exports/driver-board-3D.step
