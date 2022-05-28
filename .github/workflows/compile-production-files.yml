@@ -88,6 +88,3 @@ jobs:
             exports/schematic/*.svg
             exports/renders/*.png
             exports/driver-board-3D.step
-
-
-            dependencies/slimc-kicad-libraries/slimc/3d-packages/Ignion_NN01-102.models/NN01-102.step
