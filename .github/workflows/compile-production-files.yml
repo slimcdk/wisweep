@@ -57,7 +57,7 @@ jobs:
 
       - name: Get current date and time
         id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d %T')"
+        run: echo "::set-output name=date::$(date --iso-8601=minutes)"
 
       # TODO: dynamic expand all images with date and commit hash
       # - name: Copy renders to static folder
