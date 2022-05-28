@@ -2,7 +2,7 @@
 
 Compact WiFi and Bluetooth (5.0) NEMA17 stepper controller featuring stall detection and ultra silent operation. Supply 5-20V upto 5A using USB-C Power Delivery or through header connector. Easily embeddable and extendable with backpack boards for specialized operations.
 
-![the picture](exports/renders/driver-board-3D_front.png)
+![the picture](static/images/driver-board-3D_front.png)
 
 
 ## Contribution
