@@ -77,7 +77,7 @@ ESP32-S3:
 TMC2209:
 * https://www.digikey.dk/da/products/detail/trinamic-motion-control-gmbh/TMC2209-LA-T/10232491
 * https://www.digikey.dk/da/products/detail/trinamic-motion-control-gmbh/TMC2209-LA/10249904
-
+* https://www.digikey.at/en/products/detail/trinamic-motion-control-gmbh/TMC2209-BOB/10490037
 
 USB4120-03-C:
 * https://www.digikey.dk/da/products/detail/gct/USB4120-03-C/13547390?s=N4IgTCBcDaIKoGUBCAWAjGADCAugXyA
