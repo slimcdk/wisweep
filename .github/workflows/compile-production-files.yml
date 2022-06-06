@@ -74,8 +74,6 @@ jobs:
           dir: .
           schema: circuits/driver-board.kicad_sch
           board: circuits/driver-board.kicad_pcb
-        env:
-          HOME: $(pwd)
 
       - name: Fix file permissions for generated files
         run: sudo chown -R $(id -u):$(id -g) ./exports
