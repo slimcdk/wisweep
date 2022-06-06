@@ -57,9 +57,9 @@ jobs:
 
       - name: KiCAD main config file (kicad_common.json)
         run: |
-          mkdir -p $HOME/.config/kicad/6.0/
-          touch $HOME/.config/kicad/6.0/kicad_common.json
-          echo '{"environment": {"vars": {"SLIMC_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"}}}' | jq >> $HOME/.config/kicad/6.0/kicad_common.json
+          sudo mkdir -p /github/home/.config/kicad/6.0/
+          sudo touch /github/home/.config/kicad/6.0/kicad_common.json
+          sudo echo '{"environment": {"vars": {"SLIMC_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"}}}' | jq >> $HOME/.config/kicad/6.0/kicad_common.json
 
       # - name: Configure ESPRESSIF_3DMODELS
       #   run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.ESPRESSIF_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d"' >> $HOME/.config/kicad/6.0/kicad_common.json
