@@ -6,17 +6,17 @@ on:
 
 
 jobs:
-  esphome-firmware-validation:
-    runs-on: ubuntu-latest
+  # esphome-firmware-validation:
+  #   runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #       with:
+  #         submodules: true
 
-      - uses: esphome/build-action@v1
-        with:
-          yaml_file: firmwares/esphome/esphome.yaml
+  #     - uses: esphome/build-action@v1
+  #       with:
+  #         yaml_file: firmwares/esphome/esphome.yaml
 
   # backpack-board-bundle:
   #   runs-on: ubuntu-latest
@@ -61,14 +61,23 @@ jobs:
       - name: pwd
         run: pwd
 
-      - name: home files
+      - name: home config files
         run: ls -al $HOME
+        
+      - name: home files
+        run: ls -al $HOME/.config
+        
+      - name: home kicad files
+        run: ls -al $HOME/.config/kicad
+        
+      - name: home kicad 6.0 files
+        run: ls -al $HOME/.config/kicad/6.0
 
-      - name: Configure ESPRESSIF_3DMODELS
-        run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.ESPRESSIF_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d"' >> $HOME/.config/kicad/6.0/kicad_common.json
+      # - name: Configure ESPRESSIF_3DMODELS
+      #   run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.ESPRESSIF_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d"' >> $HOME/.config/kicad/6.0/kicad_common.json
 
-      - name: Configure SLIMC_3DMODELS
-        run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.SLIMC_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"' >> $HOME/.config/kicad/6.0/kicad_common.json
+      # - name: Configure SLIMC_3DMODELS
+      #   run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.SLIMC_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"' >> $HOME/.config/kicad/6.0/kicad_common.json
 
       - name: Generate full documentation
         uses: INTI-CMNB/KiBot@v2_k6
