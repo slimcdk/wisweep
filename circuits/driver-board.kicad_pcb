@@ -620,7 +620,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 2d635655-18ee-4403-bb15-7c4eb0477451)
-    (at 46.9 36.3 -90)
+    (at 47.1 37.2 -90)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -1731,22 +1731,22 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 5f024d31-eb59-4ff7-a918-bcdb389bd24f)
-    (at 41.4 33.5 180)
+    (at 39.6 31.8 -90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "driver-board.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-000060e42d2e")
     (attr smd)
-    (fp_text reference "C1" (at 0 -1.16) (layer "F.SilkS") hide
+    (fp_text reference "C1" (at 0 -1.16 -270) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp f5c84c41-19e7-4487-9c16-97cbee9ba6ac)
     )
-    (fp_text value "100nF" (at 0 1.16) (layer "F.Fab")
+    (fp_text value "100nF" (at 0 1.16 -270) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ea4b879f-bda1-4b51-833c-0c27c933c3cd)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0 -270) (layer "F.Fab")
       (effects (font (size 0.25 0.25) (thickness 0.04)))
       (tstamp 5a89c98f-4986-4de7-a1df-f244a9b3cbc1)
     )
@@ -1760,9 +1760,9 @@
     (fp_line (start 0.5 0.25) (end -0.5 0.25) (layer "F.Fab") (width 0.1) (tstamp b0efd12b-a3c5-4824-893a-2c3935de8b16))
     (fp_line (start -0.5 -0.25) (end 0.5 -0.25) (layer "F.Fab") (width 0.1) (tstamp f61edd70-535f-46bc-af73-4fbae5d0eaca))
     (fp_line (start -0.5 0.25) (end -0.5 -0.25) (layer "F.Fab") (width 0.1) (tstamp ff576ba0-de7d-492b-9f93-0e2704eb9a22))
-    (pad "1" smd roundrect (at -0.48 0 180) (size 0.56 0.62) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+    (pad "1" smd roundrect (at -0.48 0 270) (size 0.56 0.62) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 2 "+3V3") (pintype "passive") (tstamp f42f6ec5-f66d-4584-9c91-77b75efe7bcf))
-    (pad "2" smd roundrect (at 0.48 0 180) (size 0.56 0.62) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+    (pad "2" smd roundrect (at 0.48 0 270) (size 0.56 0.62) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "GND") (pintype "passive") (tstamp 861b8e38-f92f-465d-b8be-a0e81cd0cecc))
     (model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.wrl"
       (offset (xyz 0 0 0))
@@ -1773,7 +1773,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 65120913-d620-4fa0-b92a-e7a0632f278d)
-    (at 49.1 36.1 -90)
+    (at 49.3 37 -90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -2460,7 +2460,7 @@
 
   (footprint "Resistor_SMD:R_0201_0603Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 8a499456-d987-4e87-8fce-cbdd892eeda6)
-    (at 45.9 36.3 -90)
+    (at 46.1 37.2 -90)
     (descr "Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -2643,7 +2643,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp bd026ca0-df90-4d56-88c9-47a5ede45079)
-    (at 50.1 36.1 -90)
+    (at 50.3 37 -90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -3044,7 +3044,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp dd0d66e0-2fc2-49dd-a426-b5d6eacebae3)
-    (at 56.7 68.9 180)
+    (at 56.65 68.5 180)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -3708,7 +3708,7 @@
 
   (footprint "Capacitor_SMD:C_0402_1005Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp ff58d166-b62c-4a98-ac53-fdc50c021db3)
-    (at 48.1 36.12 -90)
+    (at 48.3 37.02 -90)
     (descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "driver-board.kicad_sch")
@@ -4038,6 +4038,24 @@
   (gr_line locked (start 66.464 30) (end 70 33.536) (layer "Edge.Cuts") (width 0.05) (tstamp a6dc1180-19c4-432b-af49-fc9179bb4519))
   (gr_line locked (start 68.586 77) (end 70 75.586) (layer "Edge.Cuts") (width 0.05) (tstamp b45059f3-613f-4b7a-a70a-ed75a9e941e6))
   (gr_line locked (start 30 66.464) (end 33.536 70) (layer "Edge.Cuts") (width 0.05) (tstamp e3c3d042-f4c5-4fb1-a6b8-52aa1c14cc0e))
+  (gr_text "${date}" (at 54.3 39.7 270) (layer "B.SilkS") (tstamp 02202713-7675-4f1c-96a1-11a55b38985c)
+    (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
+  )
+  (gr_text "github.com/slimcdk/esp-stepper-servo\n@ ${commit}" (at 55.105 65.32381 270) (layer "B.SilkS") (tstamp a8c34281-5d19-49a6-af10-73ddc741e8ed)
+    (effects (font (size 1 1) (thickness 0.2)) (justify left mirror))
+  )
+  (gr_text "ESP Stepper Servo" (at 59.95 70.126191 270) (layer "B.SilkS") (tstamp d977e0ef-5ce5-45e5-a918-4e3afd534a91)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left mirror))
+  )
+  (gr_text "by Christian Skjerning" (at 57.8 65.57381 270) (layer "B.SilkS") (tstamp fb2c7631-881e-463a-a556-d17783d4340b)
+    (effects (font (size 1 1) (thickness 0.2)) (justify left mirror))
+  )
+  (gr_text "ESP Stepper Servo" (at 38 34.9) (layer "F.SilkS") (tstamp c0b18ac4-b82f-4beb-b300-6d260a3a722c)
+    (effects (font (size 0.9 0.9) (thickness 0.15)) (justify left))
+  )
+  (gr_text "${date}\n${commit}" (at 38 36.5) (layer "F.SilkS") (tstamp dd63db8b-4398-48ec-a42a-62c0518c461d)
+    (effects (font (size 0.5 0.5) (thickness 0.1)) (justify left))
+  )
 
   (segment (start 46.425 73.325) (end 46.25 73.5) (width 0.25) (layer "F.Cu") (net 35) (tstamp 4a9d688d-5487-40d7-8ad3-55f159b70d8a))
 
@@ -4103,6 +4121,18 @@
       c039f7bc-e5f7-476c-993d-72df1eb33daf
     )
   )
+  (group "" (id 0eae2e0e-e2ed-4ce6-8b96-8c794733a464)
+    (members
+      02202713-7675-4f1c-96a1-11a55b38985c
+      a8c34281-5d19-49a6-af10-73ddc741e8ed
+    )
+  )
+  (group "" (id 19fd82a3-5ed3-41f6-aacc-044bbfc3f9df)
+    (members
+      c0b18ac4-b82f-4beb-b300-6d260a3a722c
+      dd63db8b-4398-48ec-a42a-62c0518c461d
+    )
+  )
   (group "" (id 37c7449d-97f5-43f2-bbfc-d314bfd0349a)
     (members
       1bb27600-c270-41e3-9592-f58ceafdd698
@@ -4145,6 +4175,13 @@
       66067262-f0fe-41cc-a31d-323293570972
       7d2bd7f5-bd4d-4d79-b3a3-d84dcc234abc
       eb4ebc60-6ad5-422f-ad5b-63e92a47c1b5
+    )
+  )
+  (group "" (id 9e660ba1-5792-4812-9fdf-4dc5cba90caf)
+    (members
+      0eae2e0e-e2ed-4ce6-8b96-8c794733a464
+      d977e0ef-5ce5-45e5-a918-4e3afd534a91
+      fb2c7631-881e-463a-a556-d17783d4340b
     )
   )
   (group "" (id d54406e6-ad7f-47ee-b0c5-ce10c88e9793)
