@@ -55,6 +55,21 @@ jobs:
         with:
           submodules: true
 
+      - name: PWD
+        run: env
+
+      - name: pwd
+        run: pwd
+
+      - name: home files
+        run: ls -al $HOME
+
+      - name: Configure ESPRESSIF_3DMODELS
+        run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.ESPRESSIF_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d"' >> $HOME/.config/kicad/6.0/kicad_common.json
+
+      - name: Configure SLIMC_3DMODELS
+        run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.SLIMC_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"' >> $HOME/.config/kicad/6.0/kicad_common.json
+
       - name: Generate full documentation
         uses: INTI-CMNB/KiBot@v2_k6
         with:
@@ -62,6 +77,10 @@ jobs:
           dir: .
           schema: circuits/driver-board.kicad_sch
           board: circuits/driver-board.kicad_pcb
+
+      - name: home files
+        run: ls -al $HOME
+
 
       - name: Fix file permissions for generated files
         run: sudo chown -R $(id -u):$(id -g) ./exports
