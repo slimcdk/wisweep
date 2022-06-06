@@ -55,23 +55,23 @@ jobs:
         with:
           submodules: true
 
-      - name: PWD
-        run: env
+      # - name: PWD
+      #   run: env
 
-      - name: pwd
-        run: pwd
+      # - name: pwd
+      #   run: pwd
 
-      - name: home config files
-        run: ls -al $HOME
+      # - name: home files
+      #   run: ls -al $HOME
         
-      - name: home files
-        run: ls -al $HOME/.config
+      # - name: home config files
+      #   run: ls -al $HOME/.config
         
-      - name: home kicad files
-        run: ls -al $HOME/.config/kicad
+      # - name: home kicad files
+      #   run: ls -al $HOME/.config/kicad
         
-      - name: home kicad 6.0 files
-        run: ls -al $HOME/.config/kicad/6.0
+      # - name: home kicad 6.0 files
+      #   run: ls -al $HOME/.config/kicad/6.0
 
       # - name: Configure ESPRESSIF_3DMODELS
       #   run: cat $HOME/.config/kicad/6.0/kicad_common.json | jq '.environment.vars.ESPRESSIF_3DMODELS = "'$(pwd)'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d"' >> $HOME/.config/kicad/6.0/kicad_common.json
@@ -87,9 +87,23 @@ jobs:
           schema: circuits/driver-board.kicad_sch
           board: circuits/driver-board.kicad_pcb
 
+      - name: PWD
+        run: env
+
+      - name: pwd
+        run: pwd
+
       - name: home files
         run: ls -al $HOME
-
+        
+      - name: home config files
+        run: ls -al $HOME/.config
+        
+      - name: home kicad files
+        run: ls -al $HOME/.config/kicad
+        
+      - name: home kicad 6.0 files
+        run: ls -al $HOME/.config/kicad/6.0
 
       - name: Fix file permissions for generated files
         run: sudo chown -R $(id -u):$(id -g) ./exports
