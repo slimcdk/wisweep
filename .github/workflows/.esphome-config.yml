@@ -17,5 +17,3 @@ jobs:
       - uses: esphome/build-action@v1
         with:
           yaml_file: firmwares/esphome/esphome.yaml
-
-
