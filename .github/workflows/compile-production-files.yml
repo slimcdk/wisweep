@@ -59,7 +59,10 @@ jobs:
         run: |
           sudo mkdir -p /github/home/.config/kicad/6.0/
           sudo chown -R $(id -u):$(id -g) /github/home/.config/kicad/6.0/
-          jq -n '{"environment": {"vars": {"SLIMC_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages"}}}' > /github/home/.config/kicad/6.0/kicad_common.json
+          jq -n '{"environment": {"vars": {
+            "SLIMC_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages",
+            "ESPRESSIF_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d",
+          }}}' > /github/home/.config/kicad/6.0/kicad_common.json
       
       - run: cat /github/home/.config/kicad/6.0/kicad_common.json
 
