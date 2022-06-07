@@ -1,0 +1,9 @@
+{
+    "environment": {
+    "show_warning_dialog": false,
+    "vars": {
+      "ESPRESSIF_3DMODELS": "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/slimc-kicad-libraries/espressif-kicad-libraries/3d",
+      "SLIMC_3DMODELS": "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/slimc-kicad-libraries/slimc/3d-packages",
+    }
+  }
+}
