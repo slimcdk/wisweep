@@ -4,10 +4,8 @@ Compact WiFi and Bluetooth (5.0) NEMA17 stepper controller featuring stall detec
 
 ![the picture](static/images/driver-board-3D_front.png)
 
-
-
 ## Production files
-
+[![Compile production files](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml/badge.svg)](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml)
 
 
 ## Contribution
