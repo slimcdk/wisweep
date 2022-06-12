@@ -8,4 +8,5 @@
   (lib (name "digikey-footprints")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/espressif-kicad-libraries/footprints/Espressif.pretty")(options "")(descr ""))
   (lib (name "Slimc_RF_Antenna")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/footprints/Slimc_RF_Antenna.pretty")(options "")(descr ""))
+  (lib (name "trinamic-footprints")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/digikey-partner-kicad-library/Trinamic/trinamic-footprints.pretty")(options "")(descr ""))
 )
