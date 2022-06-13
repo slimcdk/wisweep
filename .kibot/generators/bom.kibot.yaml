@@ -4,4 +4,4 @@ kibot:
 outputs:
   - type: bom
     name: Bill of Materials
-    dir: exports
+    dir: exports/gerbers

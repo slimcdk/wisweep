@@ -1,36 +1,31 @@
 kibot:
   version: 1
-  
+
+
 outputs:
-  - name: print_front
-    type: pdf_pcb_print
-    dir: exports/pcb
-    layers:
-      - layer: F.Cu
-      - layer: Dwgs.User
-
-  - name: print_bottom
-    type: pdf_pcb_print
-    dir: exports/pcb
-    layers:
-      - layer: B.Cu
-      - layer: Dwgs.User
-
-  - name: pcb_top
-    type: pcbdraw
-    dir: exports/pcb
+  - type: pcb_print
+    name: PCB print 
+    dir: exports
     options:
-      output: "%f-%i.%x"
-      format: jpg
-      # show_components: none
-      dpi: 600
-
-  - name: pcb_bot
-    type: pcbdraw
-    dir: exports/pcb
-    options:
-      output: "%f-%i.%x"
-      format: jpg
-      bottom: True
-      # show_components: none
-      dpi: 600
+      output: "%f-pcb-layers.%x"
+      color_theme: _builtin_default
+      format: PDF
+      force_edge_cuts: true
+      pages:
+        - layers:
+            - layer: F.Cu
+              suffix: F_Cu
+              description: Top most layer
+        - layers:
+            - layer: In1.Cu
+              suffix: In1_Cu
+              description: Top middle layer
+        - layers:
+            - layer: In2.Cu
+              suffix: In2_Cu
+              description: Bottom middle layer
+        - layers:
+            - layer: B.Cu
+              suffix: B_Cu
+              description: Bottom most layer
+      plot_sheet_reference: true

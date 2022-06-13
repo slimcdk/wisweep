@@ -44,3 +44,22 @@ outputs:
       rotate_x: -4
       rotate_y: 0
       rotate_z: -4
+
+  - name: pcb_top
+    type: pcbdraw
+    dir: exports/renders
+    options:
+      output: "%f-%i.%x"
+      format: jpg
+      # show_components: none
+      dpi: 600
+
+  - name: pcb_bot
+    type: pcbdraw
+    dir: exports/renders
+    options:
+      output: "%f-%i.%x"
+      format: jpg
+      bottom: True
+      # show_components: none
+      dpi: 600

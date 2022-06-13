@@ -18,6 +18,7 @@ global:
 import:
   - generators/sch-docs.kibot.yaml
   - generators/pcb-docs.kibot.yaml
-  - generators/pcb-gerbers.kibot.yaml
+  - generators/pcb-gerbers-pcbway.kibot.yaml
   - generators/rendering.kibot.yaml
   - generators/bom.kibot.yaml
+  - generators/design-report.kibot.yaml

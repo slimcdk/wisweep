@@ -57,7 +57,7 @@ outputs:
   - name: PCBWay
     comment: ZIP file for PCBWay
     type: compress
-    dir: exports/gerbers/pcbway
+    dir: exports/gerbers
     options:
       format: ZIP
       files:

@@ -6,11 +6,11 @@ outputs:
   - type: pdf_sch_print
     name: Schematic PDF
     options:
-      monochrome: true
-    dir: exports/schematic
+      monochrome: false
+    dir: exports
 
-  - type: svg_sch_print
-    name: Schematic SVG
-    options:
-      monochrome: true
-    dir: exports/schematic
+  # - type: svg_sch_print
+  #   name: Schematic SVG
+  #   options:
+  #     monochrome: true
+  #   dir: exports

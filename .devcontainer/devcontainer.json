@@ -9,6 +9,7 @@
 	"settings": {
 	},
 	"extensions": [
-		"vsls-contrib.codetour"
+		"vsls-contrib.codetour",
+		"mechatroner.rainbow-csv"
 	]
 }

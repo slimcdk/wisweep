@@ -1,0 +1,12 @@
+kibot:
+  version: 1
+
+
+outputs:
+  - type: report
+    name: Design report
+    dir: exports
+    options:
+      output: "%f-design-report.%x"
+      convert_to: pdf  # pdf file will placed in root
+      do_convert: true

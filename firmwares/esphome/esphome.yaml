@@ -19,166 +19,166 @@ packages:
   basic_sensors: !include common/basic_sensors.yaml
 
 
-external_components:
-  - source: github://slimcdk/esphome@as560x-support
-    components: [as560x]
-  - source: github://glmnet/esphome@stepper-bigtreetech
-    components: [tmc2209]
-  #- source: github://glmnet/esphome@stepper-bigtreetech
-  #  components: [tmc2209]
+# external_components:
+#   - source: github://slimcdk/esphome@as560x-support
+#     components: [as560x]
+#   - source: github://glmnet/esphome@stepper-bigtreetech
+#     components: [tmc2209]
+#   #- source: github://glmnet/esphome@stepper-bigtreetech
+#   #  components: [tmc2209]
 
 
-esphome:
-  on_boot:
-    priority: 550
-    then:
-      - tmc2209.setup:
-          microsteps: 32 # !lambda "return ${encoder_ratio} * id(main_as5601).ab_resolution() / 200;"
-          tcool_threshold: 910
-          current: 600mA
-          stall_threshold: 20
-      - delay: 1s
-      - switch.turn_on: ${hostid}_calibrate_position
+# esphome:
+#   on_boot:
+#     priority: 550
+#     then:
+#       - tmc2209.setup:
+#           microsteps: 32 # !lambda "return ${encoder_ratio} * id(main_as5601).ab_resolution() / 200;"
+#           tcool_threshold: 910
+#           current: 600mA
+#           stall_threshold: 20
+#       - delay: 1s
+#       - switch.turn_on: ${hostid}_calibrate_position
  
 
-globals:
-  - id: recover_position
-    type: bool
-    initial_value: "true"
+# globals:
+#   - id: recover_position
+#     type: bool
+#     initial_value: "true"
 
 
-i2c:
-  sda: GPIO21
-  scl: GPIO22
+# i2c:
+#   sda: GPIO21
+#   scl: GPIO22
 
 
-uart:
-  rx_pin: GPIO16
-  tx_pin: GPIO17
-  baud_rate: 9600
+# uart:
+#   rx_pin: GPIO16
+#   tx_pin: GPIO17
+#   baud_rate: 9600
 
 
-as560x:
-  variant: as5601
-  id: main_as5601
-  ab_resolution: 8
+# as560x:
+#   variant: as5601
+#   id: main_as5601
+#   ab_resolution: 8
 
 
-sensor:
-  - platform: rotary_encoder
-    id: ${hostid}_cover_encoder
-    name: ${hostname} Cover Encoder
-    pin_a: GPIO25
-    pin_b: GPIO23
-    resolution: 4
-    filters:
-      - lambda: "return x * (${right_side} ? 1 : -1);"
-#    on_value:
-#      then:
-#        - lambda: |
-#            auto cover = id(${hostid}_cover);
-#            cover->position = x / ${open_position};
-#            if ((int)x%10==0) cover->publish_state(); // makes the stepper stutter if updated every time
+# sensor:
+#   - platform: rotary_encoder
+#     id: ${hostid}_cover_encoder
+#     name: ${hostname} Cover Encoder
+#     pin_a: GPIO25
+#     pin_b: GPIO23
+#     resolution: 4
+#     filters:
+#       - lambda: "return x * (${right_side} ? 1 : -1);"
+# #    on_value:
+# #      then:
+# #        - lambda: |
+# #            auto cover = id(${hostid}_cover);
+# #            cover->position = x / ${open_position};
+# #            if ((int)x%10==0) cover->publish_state(); // makes the stepper stutter if updated every time
 
 
-switch:
-  - platform: template
-    id: ${hostid}_calibrate_position
-    name: ${hostname} Calibrate Position
-    turn_on_action:
-      - lambda: |
-          id(recover_position) = true;
-          auto stepper = id(${hostid}_cover_stepper);
-          stepper->set_target( 100000 );
-          id(${hostid}_calibrate_position).turn_off();
+# switch:
+#   - platform: template
+#     id: ${hostid}_calibrate_position
+#     name: ${hostname} Calibrate Position
+#     turn_on_action:
+#       - lambda: |
+#           id(recover_position) = true;
+#           auto stepper = id(${hostid}_cover_stepper);
+#           stepper->set_target( 100000 );
+#           id(${hostid}_calibrate_position).turn_off();
 
 
-binary_sensor:
-  - platform: gpio
-    id: ${hostid}_open_state
-    name: ${hostname} Open State
-    device_class: window
-    pin: 
-      number: GPIO33
-      mode: INPUT_PULLUP
+# binary_sensor:
+#   - platform: gpio
+#     id: ${hostid}_open_state
+#     name: ${hostname} Open State
+#     device_class: window
+#     pin: 
+#       number: GPIO33
+#       mode: INPUT_PULLUP
 
-  - platform: gpio
-    id: ${hostid}_stall_guard
-    name: ${hostname} Stall Guard
-    pin: GPIO02
-    on_press:
-      - lambda: |
-          auto stepper = id(${hostid}_cover_stepper);
-          auto encoder = id(${hostid}_cover_encoder);
-          auto cover = id(${hostid}_cover);
-          stepper->report_position(0);
-          stepper->set_target(0);
+#   - platform: gpio
+#     id: ${hostid}_stall_guard
+#     name: ${hostname} Stall Guard
+#     pin: GPIO02
+#     on_press:
+#       - lambda: |
+#           auto stepper = id(${hostid}_cover_stepper);
+#           auto encoder = id(${hostid}_cover_encoder);
+#           auto cover = id(${hostid}_cover);
+#           stepper->report_position(0);
+#           stepper->set_target(0);
 
-          int32_t restored_value = -1 * encoder->get_state();
-          encoder->set_value( ${open_position} );
+#           int32_t restored_value = -1 * encoder->get_state();
+#           encoder->set_value( ${open_position} );
           
-          cover->position = COVER_OPEN;
-          cover->publish_state();
+#           cover->position = COVER_OPEN;
+#           cover->publish_state();
 
-          if (id(recover_position)) {
-            int32_t restored_target = restored_value*${encoder_ratio};
-            restored_target = constrain(restored_target, -(${open_position}*${encoder_ratio}), 0);
-            ESP_LOGI("Tehe", "Going to target %d", restored_target);
-            stepper->set_target( restored_target );
-            id(recover_position) = false;
-          }
-
-
-
-stepper:
-  - platform: tmc2209
-    id: ${hostid}_cover_stepper
-    step_pin: GPIO13
-    dir_pin: GPIO14
-    sleep_pin:
-      number: GPIO27
-      inverted: true
-    reverse_direction: ${right_side}
-    acceleration: 12800
-    max_speed: 12800
+#           if (id(recover_position)) {
+#             int32_t restored_target = restored_value*${encoder_ratio};
+#             restored_target = constrain(restored_target, -(${open_position}*${encoder_ratio}), 0);
+#             ESP_LOGI("Tehe", "Going to target %d", restored_target);
+#             stepper->set_target( restored_target );
+#             id(recover_position) = false;
+#           }
 
 
-cover:
-  - platform: template
-    id: ${hostid}_cover
-    name: ${hostname} Cover
-    has_position: true
-    assumed_state: false
-    lambda: "return id(${hostid}_cover_encoder)->get_state() / ${open_position};"
-    stop_action:
-      - lambda: |
-          auto stepper = id(${hostid}_cover_stepper);
-          stepper->report_position(0);
-          stepper->set_target(0);
 
-    open_action:
-      - lambda: |
-          auto encoder = id(${hostid}_cover_encoder);
-          auto stepper = id(${hostid}_cover_stepper);         
-          stepper->report_position(0);
-          int32_t open_target = (${open_position} - encoder->get_state()) * ${encoder_ratio};
-          stepper->set_target(open_target * 1.1); // additional 10% just to home the cover position
+# stepper:
+#   - platform: tmc2209
+#     id: ${hostid}_cover_stepper
+#     step_pin: GPIO13
+#     dir_pin: GPIO14
+#     sleep_pin:
+#       number: GPIO27
+#       inverted: true
+#     reverse_direction: ${right_side}
+#     acceleration: 12800
+#     max_speed: 12800
 
-    close_action:
-      - lambda: |
-          auto encoder = id(${hostid}_cover_encoder);
-          auto stepper = id(${hostid}_cover_stepper);
-          stepper->report_position(0);
-          int32_t close_target = -encoder->get_state() * ${encoder_ratio};
-          stepper->set_target(close_target);
 
-    position_action:
-      - lambda: |
-          auto encoder = id(${hostid}_cover_encoder);
-          auto stepper = id(${hostid}_cover_stepper);
-          auto cover = id(${hostid}_cover);
-          int32_t current_position = cover->position * ${open_position} * ${encoder_ratio};
-          int32_t target_position = pos * ${open_position} * ${encoder_ratio};
-          stepper->report_position(current_position);
-          stepper->set_target(target_position);
+# cover:
+#   - platform: template
+#     id: ${hostid}_cover
+#     name: ${hostname} Cover
+#     has_position: true
+#     assumed_state: false
+#     lambda: "return id(${hostid}_cover_encoder)->get_state() / ${open_position};"
+#     stop_action:
+#       - lambda: |
+#           auto stepper = id(${hostid}_cover_stepper);
+#           stepper->report_position(0);
+#           stepper->set_target(0);
+
+#     open_action:
+#       - lambda: |
+#           auto encoder = id(${hostid}_cover_encoder);
+#           auto stepper = id(${hostid}_cover_stepper);         
+#           stepper->report_position(0);
+#           int32_t open_target = (${open_position} - encoder->get_state()) * ${encoder_ratio};
+#           stepper->set_target(open_target * 1.1); // additional 10% just to home the cover position
+
+#     close_action:
+#       - lambda: |
+#           auto encoder = id(${hostid}_cover_encoder);
+#           auto stepper = id(${hostid}_cover_stepper);
+#           stepper->report_position(0);
+#           int32_t close_target = -encoder->get_state() * ${encoder_ratio};
+#           stepper->set_target(close_target);
+
+#     position_action:
+#       - lambda: |
+#           auto encoder = id(${hostid}_cover_encoder);
+#           auto stepper = id(${hostid}_cover_stepper);
+#           auto cover = id(${hostid}_cover);
+#           int32_t current_position = cover->position * ${open_position} * ${encoder_ratio};
+#           int32_t target_position = pos * ${open_position} * ${encoder_ratio};
+#           stepper->report_position(current_position);
+#           stepper->set_target(target_position);
           

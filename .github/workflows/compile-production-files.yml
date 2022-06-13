@@ -103,13 +103,22 @@ jobs:
         with:
           name: driver-board-${{ steps.gitstamp.outputs.datehash }}
           path: |
-            exports/pcb/*.pdf
-            exports/pcb/*.jpg
-            exports/schematic/*.pdf
-            exports/schematic/*.svg
-            exports/renders/*.png
-            exports/gerbers/*
-            exports/driver-board-3D.step
-            firmwares/
 
-      
+            # Documentations
+            exports/driver-board-schematic.pdf
+            exports/driver-board-pcb-layers.pdf
+            
+            # Production files
+            exports/gerbers/*.zip
+            exports/gerbers/driver-board-bom.csv
+            
+            ## Design report
+            exports/driver-board-design-report.csv
+            driver-board-report.pdf
+
+            ## Extras
+            exports/renders/*.png
+            exports/driver-board-3D.step
+
+            # Firmwares
+            firmwares/
