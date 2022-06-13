@@ -9,4 +9,4 @@ outputs:
     options:
       output: "%f-design-report.%x"
       convert_to: pdf  # pdf file will placed in root
-      do_convert: true
+      do_convert: false # apt install -y pandoc texlive-latex-base texlive-latex-recommended

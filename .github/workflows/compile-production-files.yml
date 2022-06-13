@@ -114,7 +114,7 @@ jobs:
             
             ## Design report
             exports/driver-board-design-report.csv
-            driver-board-report.pdf
+            # driver-board-report.pdf
 
             ## Extras
             exports/renders/*.png
