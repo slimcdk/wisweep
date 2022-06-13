@@ -1,10 +1,12 @@
 kibot:
   version: 1
 
+
 outputs:
-  - name: JLCPCB_gerbers
+  - name: PCBWay_gerbers
+    comment: Gerbers compatible with PCBWay
     type: gerber
-    dir: exports/gerbers
+    dir: exports/gerbers/pcbway
     options: &gerber_options
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -13,14 +15,16 @@ outputs:
       plot_footprint_values: true
       force_plot_invisible_refs_vals: false
       tent_vias: true
+      use_protel_extensions: true
       create_gerber_job_file: false
+      output: "%f.%x"
       gerber_precision: 4.6
       use_gerber_x2_attributes: false
       use_gerber_net_attributes: false
       disable_aperture_macros: true
       line_width: 0.1
       subtract_mask_from_silk: false
-      inner_extension_pattern: ".gl%N"
+      inner_extension_pattern: '.gl%N'
     layers:
       - copper
       - F.SilkS
@@ -31,16 +35,33 @@ outputs:
       - B.Paste
       - Edge.Cuts
 
-  - name: JLCPCB_drill
+  - name: PCBWay_drill
+    comment: Drill files compatible with PCBWay
     type: excellon
-    dir: exports/gerbers
+    dir: exports/gerbers/pcbway
     options:
       metric_units: false
-      minimal_header: false
-      zeros_format: DECIMAL_FORMAT
+      minimal_header: true
+      zeros_format: SUPPRESS_LEADING
+      # left_digits: 3
+      # right_digits: 3
+      # See https://github.com/INTI-CMNB/kicad-ci-test-spora/issues/1
+      # and https://docs.oshpark.com/design-tools/gerbv/fix-drill-format/
       left_digits: 2
       right_digits: 4
       pth_and_npth_single_file: false
-      pth_id: ""
-      npth_id: "-NPTH"
+      pth_id: ''
+      npth_id: '-NPTH'
       output: "%f%i.drl"
+
+  - name: PCBWay
+    comment: ZIP file for PCBWay
+    type: compress
+    dir: exports/gerbers/pcbway
+    options:
+      format: ZIP
+      files:
+        - from_output: PCBWay_gerbers
+          dest: /
+        - from_output: PCBWay_drill
+          dest: /
