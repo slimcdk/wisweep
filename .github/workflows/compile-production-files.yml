@@ -108,6 +108,7 @@ jobs:
             exports/schematic/*.pdf
             exports/schematic/*.svg
             exports/renders/*.png
+            exports/gerbers/*
             exports/driver-board-3D.step
             firmwares/
 
