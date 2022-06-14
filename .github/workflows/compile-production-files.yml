@@ -98,10 +98,11 @@ jobs:
           git commit -m "latest renders"
           git push
 
-      - name: Archive production artifacts
+      - name: Archive project artifacts
         uses: actions/upload-artifact@v3
         with:
           name: driver-board-${{ steps.gitstamp.outputs.datehash }}
+          if-no-files-found: error
           path: |
 
             # Documentations
@@ -122,3 +123,13 @@ jobs:
 
             # Firmwares
             firmwares/
+
+      - name: Archive PCBWay production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: driver-board-${{ steps.gitstamp.outputs.datehash }}-pcbway
+          if-no-files-found: error
+          path: |
+            exports/gerbers/PCBWay_gerbers
+            exports/gerbers/PCBWay_drill
+            exports/gerbers/driver-board-bom.csv
