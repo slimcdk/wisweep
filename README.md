@@ -6,7 +6,6 @@ Compact WiFi and Bluetooth (5.0) NEMA17 stepper controller featuring stall detec
 
 ## Production files
 [![Compile production files](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml/badge.svg)](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml)
-[![ESPHome config validation](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/esphome-config.yml/badge.svg)](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/esphome-config.yml)
 ## Contribution
 
 Clone repository and fetch submodules
