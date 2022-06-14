@@ -343,7 +343,7 @@
     (property "Sheetfile" "driver-board.kicad_sch")
     (property "Sheetname" "")
     (path "/69dd2a11-78ea-4675-b322-845a397d482c")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "J1" (at -1.27 -2.77 180) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 20b63c7b-b42e-458c-9bd6-9826ded20516)
@@ -1257,7 +1257,7 @@
     (property "Sheetfile" "driver-board.kicad_sch")
     (property "Sheetname" "")
     (path "/4b81b014-fef0-4bd7-9b4a-dd281aefaac1")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "J3" (at -3.87 -3.18) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6d30c912-de91-49a0-98fc-256c03816868)
@@ -1878,7 +1878,7 @@
     (property "Sheetfile" "driver-board.kicad_sch")
     (property "Sheetname" "")
     (path "/2369f553-5e5c-417c-9e15-e21629ee6101")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "J4" (at 2.54 -6.26 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a2416cc1-556f-41b0-93bf-63a3c95be445)
@@ -2433,7 +2433,7 @@
     (property "Sheetfile" "driver-board.kicad_sch")
     (property "Sheetname" "")
     (path "/0be6d122-ea7e-4a5a-9a0e-aa7ccfeef3c3")
-    (attr through_hole)
+    (attr through_hole exclude_from_pos_files)
     (fp_text reference "J5" (at -1.27 -2.77) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1a6c12ce-cf28-49b7-b664-c610e6e36638)
