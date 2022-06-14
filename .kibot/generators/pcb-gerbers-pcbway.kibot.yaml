@@ -3,7 +3,7 @@ kibot:
 
 
 outputs:
-  - name: PCBWay_gerbers
+  - name: PCBWay Gerbers
     comment: Gerbers compatible with PCBWay
     type: gerber
     dir: exports/gerbers/pcbway
@@ -35,7 +35,7 @@ outputs:
       - B.Paste
       - Edge.Cuts
 
-  - name: PCBWay_drill
+  - name: PCBWay Drill
     comment: Drill files compatible with PCBWay
     type: excellon
     dir: exports/gerbers/pcbway
@@ -61,7 +61,12 @@ outputs:
     options:
       format: ZIP
       files:
-        - from_output: PCBWay_gerbers
+        - from_output: 'PCBWay Gerbers'
           dest: /
-        - from_output: PCBWay_drill
+        - from_output: 'PCBWay Drill'
           dest: /
+        - from_output: 'BOM'
+          dest: /
+
+import:
+  - generators/bom.kibot.yaml

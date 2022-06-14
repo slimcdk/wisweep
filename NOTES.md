@@ -99,3 +99,9 @@ Reference modules
 
 * External clock https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=11
 
+
+## Devcontainer
+Run kibot in container using
+```
+$ kibot -c .kibot/full-outputs.kibot.yaml -b circuits/driver-board.kicad_pcb -e circuits/driver-board.kicad_sch
+```

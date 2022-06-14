@@ -13,7 +13,7 @@ preflight:
       command: git log -1 --pretty=format:%h
 
 global:
-  output: "%f-%i.%x"
+  output: "%f-%i-%r.%x"
 
 import:
   - generators/sch-docs.kibot.yaml
