@@ -80,6 +80,7 @@ jobs:
 
       - name: Commit renders to static folder
         run: |
+          mkdir -p static/images/
           cp -r exports/renders/*.png static/images/
           git config user.name github-actions
           git config user.email github-actions@github.com
