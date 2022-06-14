@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -121,8 +121,8 @@
       },
       "track_widths": [
         0.0,
-        0.05,
         0.1,
+        0.2,
         0.4,
         0.5,
         1.0
@@ -445,7 +445,7 @@
   ],
   "text_variables": {
     "DATE_REPLACE": "2022-05-25",
-    "commit": "5b0669a",
+    "commit": "45f5ab1",
     "commit_long": "abc5fc4a894f32302d7b4985fbf801590768d1d1",
     "commit_short": "abc5fc4",
     "date": "2022-06-14",
