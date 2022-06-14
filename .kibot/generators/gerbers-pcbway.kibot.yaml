@@ -60,6 +60,7 @@ outputs:
     dir: exports/gerbers
     options:
       format: ZIP
+      output: "%f-%r-pcbway.%x"
       files:
         - from_output: 'PCBWay Gerbers'
           dest: /

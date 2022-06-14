@@ -6,8 +6,10 @@ outputs:
   - type: pdf_sch_print
     name: Schematic PDF
     options:
+      output: "%f-%i-%r.%x"
       monochrome: false
     dir: exports
+    
 
   # - type: svg_sch_print
   #   name: Schematic SVG

@@ -7,7 +7,7 @@ outputs:
     name: PCB print 
     dir: exports
     options:
-      output: "%f-%i-pcb-layers-%r.%x"
+      output: "%f-pcb-layers-%r.%x"
       color_theme: _builtin_default
       format: PDF
       force_edge_cuts: true

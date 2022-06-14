@@ -7,6 +7,6 @@ outputs:
     name: Design report
     dir: exports
     options:
-      output: "%f-design-report.%x"
+      output: "%f-design-report-%r.%x"
       convert_to: pdf  # pdf file will placed in root
       do_convert: false # apt install -y pandoc texlive-latex-base texlive-latex-recommended

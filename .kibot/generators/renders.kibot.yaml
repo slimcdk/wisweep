@@ -7,6 +7,7 @@ outputs:
     type: step
     dir: exports
     options:
+      output: "%f-%r.%x"
       metric_units: true
       
   - name: render top
@@ -49,7 +50,6 @@ outputs:
     type: pcbdraw
     dir: exports/renders
     options:
-      output: "%f-%i.%x"
       format: jpg
       # show_components: none
       dpi: 600
@@ -58,7 +58,6 @@ outputs:
     type: pcbdraw
     dir: exports/renders
     options:
-      output: "%f-%i.%x"
       format: jpg
       bottom: True
       # show_components: none
