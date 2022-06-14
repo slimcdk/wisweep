@@ -111,12 +111,3 @@ jobs:
             ## Extras
             exports/renders/*.png
             exports/driver-board-*.step
-            
-
-      - name: Archive firmwares
-        uses: actions/upload-artifact@v3
-        with:
-          name: driver-board-${{ steps.gitstamp.outputs.datehash }}-firmwares
-          if-no-files-found: error
-          path: |
-            firmwares/
