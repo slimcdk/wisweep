@@ -13,12 +13,13 @@ preflight:
       command: git log -1 --pretty=format:%h
 
 global:
-  output: "%f-%r-%i.%x"
+  output: "%f-%i-%r.%x"
 
 import:
   - generators/sch-docs.kibot.yaml
   - generators/pcb-docs.kibot.yaml
-  - generators/pcb-gerbers-pcbway.kibot.yaml
-  - generators/rendering.kibot.yaml
+  - generators/gerbers-pcbway.kibot.yaml  
   - generators/bom.kibot.yaml
+  - generators/rendering.kibot.yaml
   - generators/design-report.kibot.yaml
+  - generators/datasheets.kibot.yaml

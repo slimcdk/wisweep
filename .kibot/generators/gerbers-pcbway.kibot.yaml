@@ -65,8 +65,3 @@ outputs:
           dest: /
         - from_output: 'PCBWay Drill'
           dest: /
-        - from_output: 'BOM'
-          dest: /
-
-import:
-  - generators/bom.kibot.yaml

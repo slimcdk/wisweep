@@ -15,9 +15,15 @@ $ git clone --recurse-submodules git@github.com:slimcdk/esp-stepper-servo.git
 ```
 
 
-### Versioning
+## Versioning
 
 Revisions are controlled through git tags such any production easily can be traced back to a commit containing everything. Complete sets of compatible schematics, firmwares, 3D models, documentation will all stay together under same tag in the source history. Firmware updates to older board revisions will however get out of sync at some point.
+
+### Hardware to firmware relations
+| Hardware revision | Firmware version |
+|------|------|
+|      |      |
+
 
 
 ---

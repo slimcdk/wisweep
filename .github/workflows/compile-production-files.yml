@@ -108,7 +108,8 @@ jobs:
             # Documentations
             exports/driver-board-schematic.pdf
             exports/driver-board-pcb-layers.pdf
-            
+            exports/datasheets
+
             # Production files
             exports/gerbers/*.zip
             exports/gerbers/driver-board-bom.csv
@@ -116,18 +117,16 @@ jobs:
             ## Design report
             exports/driver-board-design-report.csv
             # driver-board-report.pdf
-
+    
             ## Extras
             exports/renders/*.png
             exports/driver-board-3D.step
+            
 
-            # Firmwares
-            firmwares/
-
-      - name: Archive PCBWay production artifacts
+      - name: Archive firmwares
         uses: actions/upload-artifact@v3
         with:
-          name: driver-board-${{ steps.gitstamp.outputs.datehash }}-pcbway
+          name: driver-board-${{ steps.gitstamp.outputs.datehash }}-firmwares
           if-no-files-found: error
           path: |
-            exports/gerbers/driver-board-PCBWay-${{ steps.gitstamp.outputs.datehash }}.zip
+            firmwares/

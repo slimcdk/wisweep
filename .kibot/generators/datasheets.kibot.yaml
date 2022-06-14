@@ -1,0 +1,7 @@
+kibot:
+  version: 1
+
+outputs:
+  - type: download_datasheets
+    name: Fetch datasheets
+    dir: exports/datasheets

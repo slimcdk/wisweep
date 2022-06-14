@@ -4,4 +4,16 @@ kibot:
 outputs:
   - type: bom
     name: BOM
-    dir: exports/gerbers
+    dir: exports
+
+  # - type: kibom
+  #   name: KiBOM
+  #   dir: exports/
+  #   options:
+  #     format: CSV
+  #     csv:
+  #       quote_all: false
+  #       separator: ','
+  #       hide_header: false
+  #       hide_pcb_info: false
+  #       hide_stats_info: false
