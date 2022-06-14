@@ -99,6 +99,8 @@ Reference modules
 
 * External clock https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf#page=11
 
+Resources and considerations to improved design
+* https://www.youtube.com/watch?v=ImkvsQEY6OY
 
 ## Devcontainer
 Run kibot in container using

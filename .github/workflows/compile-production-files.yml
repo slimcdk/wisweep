@@ -130,5 +130,4 @@ jobs:
           name: driver-board-${{ steps.gitstamp.outputs.datehash }}-pcbway
           if-no-files-found: error
           path: |
-            exports/gerbers/driver-board-PCBWay-*.zip
-            exports/gerbers/driver-board-bom-*.csv
+            exports/gerbers/driver-board-PCBWay-${{ steps.gitstamp.outputs.datehash }}.zip
