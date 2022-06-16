@@ -54,6 +54,9 @@ Supplier:
 
 ### Additional resources
 
+ESP32 design guidelines
+* https://www.espressif.com/sites/default/files/documentation/esp32-s3_hardware_design_guidelines_en.pdf
+
 ROHM Power Management:
 * https://www.rohm.com/documents/11303/7418114/SF2020_EN_P30_Power_Management.pdf/f139e950-be1a-8f9c-02aa-8a1653d910db
 

@@ -26,3 +26,8 @@ Revisions are controlled through git tags such any production easily can be trac
   * https://github.com/INTI-CMNB/KiBot
 * https://code.visualstudio.com/
   * https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
+
+
+## Production notes
+
+* Hole near USB connector is slot, not a drill.
