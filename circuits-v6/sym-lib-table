@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name "Slimc_Sensor_Magnetic")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Sensor_Magnetic.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_Regulator_Switching")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Regulator_Switching.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_Interface_USB")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Interface_USB.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_Driver_Motor")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Driver_Motor.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_Converter_DCDC")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Converter_DCDC.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_Connector_USB")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_Connector_USB.kicad_sym")(options "")(descr ""))
+  (lib (name "Slimc_74xx")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/slimc/symbols/Slimc_74xx.kicad_sym")(options "")(descr ""))
+  (lib (name "trinamic")(type "Legacy")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/digikey-partner-kicad-library/Trinamic/trinamic.lib")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/slimc-kicad-libraries/espressif-kicad-libraries/libraries/Espressif.kicad_sym")(options "")(descr ""))
+)
