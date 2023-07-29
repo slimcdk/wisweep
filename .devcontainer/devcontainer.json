@@ -1,15 +1,66 @@
-
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/docker-existing-dockerfile
 {
-	"name": "KiCad/KiBot",
-	"context": "..",
-	"dockerFile": "./Dockerfile",
-	//"remoteUser": "vscode",
-	"settings": {
+	"name": "ESP Stepper Servo",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "."
 	},
-	"extensions": [
-		"vsls-contrib.codetour",
-		"mechatroner.rainbow-csv"
-	]
+	"postCreateCommand": {
+		"dev-permission": "sudo chmod a+rw /dev/ttyUSB0",
+		"submodules": "git submodule update --init --recursive"
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+	],
+	"runArgs": [
+		"--net=host",
+		"--privileged"
+	],
+	"features": {
+		"ghcr.io/devcontainers/features/docker-outside-of-docker:1": {},
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/git-lfs:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/act-asdf:2": {},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "3.10"
+		},
+		"ghcr.io/devcontainers-contrib/features/pipx-package:1": {
+			"package": "esptool"
+		},
+		"ghcr.io/devcontainers/features/go:1": {
+			"version": "1.20"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {},
+		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
+	},
+	
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"espressif.esp-idf-extension",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"redhat.vscode-yaml",
+				"dbaeumer.vscode-eslint",
+				"ms-edgedevtools.vscode-edge-devtools",
+				"firefox-devtools.vscode-firefox-debug",
+				"ms-azuretools.vscode-docker",
+				"donjayamanne.githistory",
+				"eamodio.gitlens",
+				"StefanAltheimer.mongoose-os-ide-extended",
+				"mongoose-os.mongoose-os-ide",
+				"alxandr.mongoose-deps-gen",
+				"ms-vscode.cpptools-extension-pack"
+			],
+			"settings": {
+				"idf.showOnboardingOnInit": false,
+				"idf.toolsPath": "/home/vscode/.espressif",
+				"idf.espIdfPath": "/home/vscode/espidf",
+				"idf.pythonBinPath": "/usr/local/python",
+				"idf.port": "/dev/ttyUSB0"
+			}
+		}
+	}
 }

@@ -1,3 +1,18 @@
-[submodule "dependencies/slimc-kicad-libraries"]
-	path = dependencies/slimc-kicad-libraries
-	url = git@github.com:slimcdk/slimc-kicad-libraries.git
+[submodule "firmware/libraries/esp-idf-lib"]
+	path = firmware/libraries/esp-idf-lib
+	url = https://github.com/UncleRus/esp-idf-lib
+[submodule "firmware/libraries/slimcdk-esp-idf-lib"]
+	path = firmware/libraries/slimcdk-esp-idf-lib
+	url = git@github.com:slimcdk/esp-idf-lib.git
+[submodule "firmware/libraries/ESP32-TMC2208-UART-Component"]
+	path = firmware/libraries/ESP32-TMC2208-UART-Component
+	url = https://github.com/HarryVienna/ESP32-TMC2208-UART-Component.git
+[submodule "firmware/libraries/shaneapowell-ESP32-TMC2208-UART-Component"]
+	path = firmware/libraries/shaneapowell-ESP32-TMC2208-UART-Component
+	url = https://github.com/shaneapowell/ESP32-TMC2208-UART-Component.git
+[submodule "firmware/libraries/henriquefchaves-ESP32-TMC_StepperDriver_UART"]
+	path = firmware/libraries/henriquefchaves-ESP32-TMC_StepperDriver_UART
+	url = https://github.com/henriquefchaves/ESP32-TMC_StepperDriver_UART.git
+[submodule "dependencies/kicad-libraries"]
+	path = dependencies/kicad-libraries
+	url = git@github.com:slimcdk/kicad-libraries.git
