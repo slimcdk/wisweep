@@ -1,0 +1,12 @@
+(fp_lib_table
+  (lib (name "Slimc_Driver_Motor")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Driver_Motor.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Interface_USB")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Interface_USB.pretty")(options "")(descr ""))
+  (lib (name "Slimc_LED_SMD")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_LED_SMD.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Connector_USB")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Connector_USB.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Regulator_Switching")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Regulator_Switching.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Converter_DCDC")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Converter_DCDC.pretty")(options "")(descr ""))
+  (lib (name "digikey-footprints")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
+  (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/espressif-kicad-libraries/footprints/Espressif.pretty")(options "")(descr ""))
+  (lib (name "Slimc_RF_Antenna")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_RF_Antenna.pretty")(options "")(descr ""))
+  (lib (name "trinamic-footprints")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/digikey-partner-kicad-library/Trinamic/trinamic-footprints.pretty")(options "")(descr ""))
+)
