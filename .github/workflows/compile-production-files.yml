@@ -59,8 +59,8 @@ jobs:
         with:
           config: .kibot/full-outputs.kibot.yaml
           dir: .
-          schema: circuits/driver-board.kicad_sch
-          board: circuits/driver-board.kicad_pcb
+          schema: electronics/driver-board.kicad_sch
+          board: electronics/driver-board.kicad_pcb
 
       - name: Fix file permissions for generated files
         run: sudo chown -R $(id -u):$(id -g) ./exports
