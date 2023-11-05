@@ -60,11 +60,6 @@ jobs:
           config: .kibot/full-outputs.kibot.yaml
           schema: electronics/driver-board.kicad_sch
           board: electronics/driver-board.kicad_pcb
-          environment:
-            extra_os:
-              - ESPRESSIF_3DMODELS=dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
-            # models_3d:
-            #   - ESPRESSIF_3DMODELS=dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
           install3D: yes
 
       - name: Fix file permissions for generated files

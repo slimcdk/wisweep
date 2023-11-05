@@ -14,6 +14,12 @@ preflight:
 
 global:
   output: "%f-%i.%x"
+  environment:
+    extra_os:
+      ESPRESSIF_3DMODELS: dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
+            # models_3d:
+            #   - ESPRESSIF_3DMODELS=dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
+
 
 import:
   - generators/sch-docs.kibot.yaml
