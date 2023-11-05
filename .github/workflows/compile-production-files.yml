@@ -52,6 +52,10 @@ jobs:
             "SLIMC_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/kicad-libraries/slimc/3d-packages",
             "ESPRESSIF_3DMODELS":"'$PWD'/esp-stepper-servo/dependencies/kicad-libraries/espressif-kicad-libraries/3d",
           }}}' > $HOME/.config/kicad/7.0/kicad_common.json
+
+      - run: |
+          ll $HOME/.config/kicad/7.0/
+          cat $HOME/.config/kicad/7.0/kicad_common.json
             
       - name: Generate full documentation
         uses: INTI-CMNB/KiBot@v2_k7
