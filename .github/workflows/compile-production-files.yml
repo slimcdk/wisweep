@@ -54,7 +54,7 @@ jobs:
           }}}' > $HOME/.config/kicad/7.0/kicad_common.json
 
       - run: |
-          ll $HOME/.config/kicad/7.0/
+          ls -al $HOME/.config/kicad/7.0/
           cat $HOME/.config/kicad/7.0/kicad_common.json
             
       - name: Generate full documentation
