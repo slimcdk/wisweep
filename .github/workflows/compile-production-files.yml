@@ -68,6 +68,7 @@ jobs:
 
       - name: Get current date and time
         id: gitstamp
+        # https://github.blog/changelog/2022-10-11-github-actions-deprecating-save-state-and-set-output-commands/
         # run: echo "::set-output name=datehash::$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)"
         run: echo "datehash=$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)" >> $GITHUB_OUTPUT
         

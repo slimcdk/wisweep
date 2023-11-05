@@ -1,6 +1,6 @@
 # ESP Stepper Servo
 
-Compact WiFi and Bluetooth (5.0) NEMA17 stepper controller featuring stall detection and ultra silent operation. Supply 5-20V upto 5A using USB-C Power Delivery or through header connector. Easily embeddable and extendable with backpack boards for specialized operations.
+Compact WiFi and Bluetooth (5.0) / ZigBee NEMA17 stepper controller featuring stall detection and ultra silent operation. Supply 5-35V upto 3A.
 
 ![the picture](static/images/driver-board-3D_front.png)
 
@@ -29,5 +29,3 @@ Revisions are controlled through git tags such any production easily can be trac
 
 
 ## Production notes
-
-* Hole near USB connector is slot, not a drill.
