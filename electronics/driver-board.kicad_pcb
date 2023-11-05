@@ -934,7 +934,7 @@
       (net 9 "/TMC_OUT2A") (pinfunction "Pin_3") (pintype "passive") (tstamp c0ca3c7e-21cc-4693-ac66-1929ab2b76b6))
     (pad "4" thru_hole oval locked (at 0 7.62 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 10 "/TMC_OUT1A") (pinfunction "Pin_4") (pintype "passive") (tstamp cd560c99-999a-4812-8c45-ba4698949f97))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
