@@ -68,7 +68,8 @@ jobs:
 
       - name: Get current date and time
         id: gitstamp
-        run: echo "::set-output name=datehash::$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)"
+        # run: echo "::set-output name=datehash::$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)"
+        run: echo "datehash=$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)" >> $GITHUB_OUTPUT
         
 
       # TODO: dynamic expand all images with date and commit hash

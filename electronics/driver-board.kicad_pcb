@@ -363,7 +363,7 @@
       (net 3 "VBUS") (pinfunction "Pin_2") (pintype "passive") (tstamp f065f817-65de-4da4-8811-ab60b6b75fc2))
     (pad "2" smd roundrect (at 2 4 180) (size 2 6) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 3 "VBUS") (pinfunction "Pin_2") (pintype "passive") (tstamp afe921b7-1c9c-4326-bede-97d86ef9968b))
-    (model "${KICAD7_3DMODEL_DIR}/Connector_TE-Connectivity.3dshapes/TE_2834006-2_1x02_P4.0mm_Horizontal.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Connector_TE-Connectivity.3dshapes/TE_2834006-2_1x02_P4.0mm_Horizontal.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -859,7 +859,7 @@
       (net 28 "Net-(D2-K)") (pinfunction "1") (pintype "passive") (tstamp a56e3753-d6b9-4426-97d2-97c777705fa6))
     (pad "2" smd rect (at 2.4265 0 90) (size 1.903 2.79) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 32 "+5V") (pinfunction "2") (pintype "passive") (tstamp 38e00f44-9b2b-4e19-b926-2872af801060))
-    (model "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Vishay_IHLP-2020.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Vishay_IHLP-2020.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3226,7 +3226,7 @@
       (net 1 "GND") (pinfunction "EP") (pintype "power_out") (tstamp 328f382f-5df2-4027-969c-8cef91a175f4))
     (pad "9" thru_hole circle (at 0.65 1.95 90) (size 0.5 0.5) (drill 0.2) (layers "*.Cu")
       (net 1 "GND") (pinfunction "EP") (pintype "power_out") (tstamp 4ea57d4e-6fc8-40f6-8434-24059e249e7f))
-    (model "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm.wrl"
+    (model "${KICAD7_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3345,7 +3345,7 @@
       (net 3 "VBUS") (pinfunction "K") (pintype "passive") (tstamp 9d0280ac-d8ab-4088-a3a8-d79961110a22))
     (pad "2" smd roundrect (at 1.4 0 270) (size 1.25 2.65) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.2)
       (net 1 "GND") (pinfunction "A") (pintype "passive") (tstamp 19964b2a-0d71-43ca-9ad5-5f62acd9f3df))
-    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_1210_3225Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Diode_SMD.3dshapes/D_1210_3225Metric.wrl" hide
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
