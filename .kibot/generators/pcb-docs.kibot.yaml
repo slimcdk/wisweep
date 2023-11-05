@@ -16,14 +16,14 @@ outputs:
             - layer: F.Cu
               suffix: F_Cu
               description: Top most layer
-        - layers:
-            - layer: In1.Cu
-              suffix: In1_Cu
-              description: Top middle layer
-        - layers:
-            - layer: In2.Cu
-              suffix: In2_Cu
-              description: Bottom middle layer
+        # - layers:
+        #     - layer: In1.Cu
+        #       suffix: In1_Cu
+        #       description: Top middle layer
+        # - layers:
+        #     - layer: In2.Cu
+        #       suffix: In2_Cu
+        #       description: Bottom middle layer
         - layers:
             - layer: B.Cu
               suffix: B_Cu
