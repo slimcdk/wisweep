@@ -54,9 +54,10 @@ jobs:
           }}}' > $HOME/.config/kicad/7.0/kicad_common.json
 
       - run: |
+          pwd
           ls -al $HOME/.config/kicad/7.0/
           cat $HOME/.config/kicad/7.0/kicad_common.json
-            
+
       - name: Generate full documentation
         uses: INTI-CMNB/KiBot@v2_k7
         with:
