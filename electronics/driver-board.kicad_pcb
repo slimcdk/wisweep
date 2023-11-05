@@ -368,7 +368,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/3d-models/c-2834006-2-c-3d.stp"
+    (model "../dependencies/3d-models/c-2834006-2-c-3d.stp"
       (offset (xyz -2 -6 1.9))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -864,7 +864,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/3d-models/IND_IHLP_2020_BZ_VIS.step"
+    (model "../dependencies/3d-models/IND_IHLP_2020_BZ_VIS.step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3231,7 +3231,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/3d-models/DDA0008B.stp"
+    (model "../dependencies/3d-models/DDA0008B.stp"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
