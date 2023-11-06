@@ -22,6 +22,8 @@ outputs:
       ray_tracing: true
       view: top
       transparent_background: true
+      wait_render: -600
+
 
   - type: render_3d
     name: render bottom
@@ -35,6 +37,8 @@ outputs:
       ray_tracing: true
       view: bottom
       transparent_background: true
+      wait_render: -600
+
 
   - type: render_3d
     name: render angled 1
@@ -51,6 +55,8 @@ outputs:
       rotate_y: 0
       rotate_z: -4
       transparent_background: true
+      wait_render: -600
+
 
   - type: render_3d
     name: render angled 2
@@ -67,6 +73,8 @@ outputs:
       rotate_y: 0
       rotate_z: 8
       transparent_background: true
+      wait_render: -600
+
 
   - type: render_3d
     name: render angled 3
@@ -83,6 +91,7 @@ outputs:
       rotate_y: 0
       rotate_z: -5
       transparent_background: true
+      wait_render: -600
 
   - name: pcb_top
     type: pcbdraw
