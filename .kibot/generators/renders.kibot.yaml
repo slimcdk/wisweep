@@ -11,6 +11,7 @@ outputs:
       metric_units: true
       
   - name: render top
+    file_id: render_top
     type: render_3d
     dir: exports/renders
     options:
@@ -22,6 +23,7 @@ outputs:
       view: top
 
   - name: render bottom
+    file_id: render_bottom
     type: render_3d
     dir: exports/renders
     options:
@@ -33,6 +35,7 @@ outputs:
       view: bottom
 
   - name: render angled
+    file_id: render_angled_1
     type: render_3d
     dir: exports/renders
     options:
@@ -47,6 +50,7 @@ outputs:
       rotate_z: -4
 
   - name: render promo
+    file_id: render_angled_2
     type: render_3d
     dir: exports/renders
     options:
