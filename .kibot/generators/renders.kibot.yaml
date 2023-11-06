@@ -50,10 +50,10 @@ outputs:
       download: true
       ray_tracing: true
       view: front
-      rotate_x: -6
+      rotate_x: -5
       rotate_y: 0
       rotate_z: 6
-      # transparent_background: true
+      transparent_background: true
       # wait_render: -600
 
   # - type: render_3d
