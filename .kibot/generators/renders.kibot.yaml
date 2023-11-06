@@ -14,7 +14,7 @@ outputs:
     name: render top
     dir: exports/renders
     options:
-      output: render_top
+      # output: render_top
       height: 1000
       width: 1600
       zoom: 2
@@ -29,7 +29,7 @@ outputs:
     name: render bottom
     dir: exports/renders
     options:
-      output: render_bottom
+      # output: render_bottom
       height: 1000
       width: 1600
       zoom: 2
@@ -39,6 +39,22 @@ outputs:
       transparent_background: true
       wait_render: -600
 
+  - type: render_3d
+    name: render angled
+    dir: exports/renders
+    options:
+      # output: render_angled_2
+      height: 1000
+      width: 1600
+      zoom: 2
+      download: true
+      ray_tracing: true
+      view: front
+      rotate_x: -4
+      rotate_y: 0
+      rotate_z: 8
+      # transparent_background: true
+      # wait_render: -600
 
   # - type: render_3d
   #   name: render angled 1
@@ -56,24 +72,6 @@ outputs:
   #     rotate_z: -4
   #     transparent_background: true
   #     wait_render: -600
-
-
-  - type: render_3d
-    name: render angled 2
-    dir: exports/renders
-    options:
-      output: render_angled_2
-      height: 1000
-      width: 1600
-      zoom: 2
-      download: true
-      ray_tracing: true
-      view: front
-      rotate_x: -4
-      rotate_y: 0
-      rotate_z: 8
-      transparent_background: true
-      wait_render: -600
 
 
   # - type: render_3d
