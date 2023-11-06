@@ -40,22 +40,22 @@ outputs:
       wait_render: -600
 
 
-  - type: render_3d
-    name: render angled 1
-    dir: exports/renders
-    options:
-      output: render_angled_1
-      height: 1000
-      width: 1600
-      zoom: 2
-      download: true
-      ray_tracing: true
-      view: front
-      rotate_x: -4
-      rotate_y: 0
-      rotate_z: -4
-      transparent_background: true
-      wait_render: -600
+  # - type: render_3d
+  #   name: render angled 1
+  #   dir: exports/renders
+  #   options:
+  #     output: render_angled_1
+  #     height: 1000
+  #     width: 1600
+  #     zoom: 2
+  #     download: true
+  #     ray_tracing: true
+  #     view: front
+  #     rotate_x: -4
+  #     rotate_y: 0
+  #     rotate_z: -4
+  #     transparent_background: true
+  #     wait_render: -600
 
 
   - type: render_3d
@@ -76,22 +76,22 @@ outputs:
       wait_render: -600
 
 
-  - type: render_3d
-    name: render angled 3
-    dir: exports/renders
-    options:
-      output: render_angled_3
-      height: 1000
-      width: 1600
-      zoom: 2
-      download: true
-      ray_tracing: true
-      view: front
-      rotate_x: 4
-      rotate_y: 0
-      rotate_z: -5
-      transparent_background: true
-      wait_render: -600
+  # - type: render_3d
+  #   name: render angled 3
+  #   dir: exports/renders
+  #   options:
+  #     output: render_angled_3
+  #     height: 1000
+  #     width: 1600
+  #     zoom: 2
+  #     download: true
+  #     ray_tracing: true
+  #     view: front
+  #     rotate_x: 4
+  #     rotate_y: 0
+  #     rotate_z: -5
+  #     transparent_background: true
+  #     wait_render: -600
 
   - name: pcb_top
     type: pcbdraw
