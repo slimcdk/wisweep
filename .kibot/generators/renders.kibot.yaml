@@ -46,6 +46,20 @@ outputs:
       rotate_y: 0
       rotate_z: -4
 
+  - name: render promo
+    type: render_3d
+    dir: exports/renders
+    options:
+      height: 1000
+      width: 1600
+      zoom: 2
+      download: true
+      ray_tracing: true
+      view: front
+      rotate_x: 4
+      rotate_y: 0
+      rotate_z: -5
+
   - name: pcb_top
     type: pcbdraw
     dir: exports/renders
