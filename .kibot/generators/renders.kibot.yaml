@@ -91,7 +91,7 @@ outputs:
       output: "%f-top-view-%r.%x"
       format: png
       dpi: 600
-      show_components: true
+      show_components: all
 
   - type: pcbdraw
     name: PCB Top View No Components
@@ -109,7 +109,7 @@ outputs:
       format: png
       bottom: true
       dpi: 600
-      show_components: true
+      show_components: all
 
   - type: pcbdraw
     name: PCB Bottom View No Components
