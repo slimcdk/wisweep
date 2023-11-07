@@ -91,6 +91,7 @@ outputs:
       output: "%f-top-view-%r.%x"
       format: png
       dpi: 600
+      show_components: true
 
   - type: pcbdraw
     name: PCB Top View No Components
@@ -106,8 +107,9 @@ outputs:
     options:
       output: "%f-bottom-view-%r.%x"
       format: png
-      bottom: True
+      bottom: true
       dpi: 600
+      show_components: true
 
   - type: pcbdraw
     name: PCB Bottom View No Components
@@ -115,5 +117,5 @@ outputs:
     options:
       output: "%f-bottom-view-no-comps-%r.%x"
       format: png
-      bottom: True
+      bottom: true
       dpi: 600

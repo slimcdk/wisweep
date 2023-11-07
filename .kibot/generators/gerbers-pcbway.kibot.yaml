@@ -64,6 +64,10 @@ outputs:
       output: "%f-%r-pcbway.%x"
       files:
         - from_output: 'PCBWay Gerbers'
+          dest: /
         - from_output: 'PCBWay Drill'
+          dest: /
         - from_output: 'PCBWay Gerber Drill'
+          dest: /
         - from_output: 'PCBWay PnP file'
+          dest: /

@@ -67,9 +67,13 @@ outputs:
       output: "%f-%r-jlcpcb.%x"
       files:
         - from_output: 'JLCPCB Gerbers'
+          dest: /
         - from_output: 'JLCPCB Drill'
+          dest: /
         - from_output: 'JLCPCB Gerber Drill'
+          dest: /
         - from_output: 'JLCPCB PnP file'
+          dest: /
 
 
   

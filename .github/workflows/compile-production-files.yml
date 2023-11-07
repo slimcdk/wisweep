@@ -68,7 +68,7 @@ jobs:
 
             exports/datasheets
             exports/driver-board-ibom-*.html
-            driver-board-kicost-*.xlsx
+            exports/driver-board-kicost-*.xlsx
 
             # Production files
             exports/gerbers/*.zip
@@ -78,4 +78,3 @@ jobs:
             exports/renders/*.png
             exports/renders/*.jpg
             exports/driver-board-*.step
-            
