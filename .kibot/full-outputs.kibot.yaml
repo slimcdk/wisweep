@@ -6,6 +6,7 @@ preflight:
   run_drc: false
   check_zone_fills: true
   ignore_unconnected: true
+  update_xml: true
   set_text_variables:
     - name: date
       command: git log -1 --format='%as'

@@ -2,17 +2,20 @@ kibot:
   version: 1
 
 outputs:
+
   - type: bom
     name: BOM
     dir: exports
     options:
       output: "%f-%i-%r.%x"
 
+  - type: netlist
+    name: Generate Netlist XML
+    dir: exports
 
   - type: ibom
     name: Interactive BOM
     dir: exports
-
 
   - type: kicost
     name: Costs
