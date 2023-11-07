@@ -24,7 +24,7 @@ global:
   field_lcsc_part: lcsc_part_number
   field_tolerance: Tolerance
   field_voltage: Voltage
-  filed_package: Package
+  field_package: Package
   hide_excluded: true
   cross_using_kicad: true 
   pcb_material: FR4
