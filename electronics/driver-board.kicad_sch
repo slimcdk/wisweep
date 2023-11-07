@@ -3215,10 +3215,6 @@
     (effects (font (size 1 1)) (justify right bottom))
     (uuid 79463748-c142-422a-8b4d-d2f71dfb45d8)
   )
-  (text "POWER" (at 17.145 22.86 0)
-    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
-    (uuid f0aff930-588f-4f06-a4d3-c9c8f61970e0)
-  )
 
   (label "TMC_ENCN" (at 137.795 156.845 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
