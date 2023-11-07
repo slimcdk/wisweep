@@ -12,6 +12,8 @@ outputs:
   - type: netlist
     name: Generate Netlist XML
     dir: exports
+    options:
+      output: "%f-%i-%r.%x"
 
   - type: ibom
     name: Interactive BOM

@@ -14,7 +14,6 @@ outputs:
     name: Render Top View
     dir: exports/renders
     options:
-      # output: render_top
       height: 1000
       width: 1600
       zoom: 2
@@ -22,14 +21,11 @@ outputs:
       ray_tracing: true
       view: top
       transparent_background: true
-      wait_render: -600
-
 
   - type: render_3d
     name: Render Bottom View
     dir: exports/renders
     options:
-      # output: render_bottom
       height: 1000
       width: 1600
       zoom: 2
@@ -37,13 +33,11 @@ outputs:
       ray_tracing: true
       view: bottom
       transparent_background: true
-      wait_render: -600
 
   - type: render_3d
     name: Render Angled View
     dir: exports/renders
     options:
-      # output: render_angled_2
       height: 1000
       width: 1600
       zoom: 2
@@ -54,56 +48,51 @@ outputs:
       rotate_y: 0
       rotate_z: 6
       transparent_background: true
-      # wait_render: -600
 
-  # - type: render_3d
-  #   name: render angled 1
-  #   dir: exports/renders
-  #   options:
-  #     output: render_angled_1
-  #     height: 1000
-  #     width: 1600
-  #     zoom: 2
-  #     download: true
-  #     ray_tracing: true
-  #     view: front
-  #     rotate_x: -4
-  #     rotate_y: 0
-  #     rotate_z: -4
-  #     transparent_background: true
-  #     wait_render: -600
+  - type: render_3d
+    name: Render Angled View 1
+    dir: exports/renders
+    options:
+      height: 1000
+      width: 1600
+      zoom: 2
+      download: true
+      ray_tracing: true
+      view: front
+      rotate_x: -4
+      rotate_y: 0
+      rotate_z: -4
+      transparent_background: true
 
 
-  # - type: render_3d
-  #   name: render angled 3
-  #   dir: exports/renders
-  #   options:
-  #     output: render_angled_3
-  #     height: 1000
-  #     width: 1600
-  #     zoom: 2
-  #     download: true
-  #     ray_tracing: true
-  #     view: front
-  #     rotate_x: 4
-  #     rotate_y: 0
-  #     rotate_z: -5
-  #     transparent_background: true
-  #     wait_render: -600
+  - type: render_3d
+    name: render angled 3
+    dir: exports/renders
+    options:
+      height: 1000
+      width: 1600
+      zoom: 2
+      download: true
+      ray_tracing: true
+      view: front
+      rotate_x: 4
+      rotate_y: 0
+      rotate_z: -5
+      transparent_background: true
 
-  # - type: pcbdraw
-  #   name: Draw Top PCB
-  #   dir: exports/renders
-  #   options:
-  #     format: jpg
-  #     # show_components: none
-  #     dpi: 600
+  - type: pcbdraw
+    name: Draw Top PCB
+    dir: exports/renders
+    options:
+      format: jpg
+      # show_components: none
+      dpi: 600
 
-  # - type: pcbdraw
-  #   name: Draw Bottom PCB
-  #   dir: exports/renders
-  #   options:
-  #     format: jpg
-  #     bottom: True
-  #     # show_components: none
-  #     dpi: 600
+  - type: pcbdraw
+    name: Draw Bottom PCB
+    dir: exports/renders
+    options:
+      format: jpg
+      bottom: True
+      # show_components: none
+      dpi: 600
