@@ -8,6 +8,12 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
 
+
+  - type: ibom
+    name: Interactive BOM
+    dir: exports
+
+
   - type: kicost
     name: Costs
     dir: exports
