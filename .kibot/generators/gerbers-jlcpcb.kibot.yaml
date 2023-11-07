@@ -3,9 +3,10 @@ kibot:
 
 
 outputs:
-  - type: gerber
-    name: PCBWay Gerbers
-    dir: exports/gerbers/pcbway
+  - name: JLCPCB Gerbers
+    comment: Gerbers compatible with JLCPCB
+    type: gerber
+    dir: exports/gerbers/jlcpcb
     options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -34,9 +35,10 @@ outputs:
       - B.Paste
       - Edge.Cuts
 
-  - type: excellon
-    name: PCBWay Drill
-    dir: exports/gerbers/pcbway
+  - name: JLCPCB Drill
+    comment: Drill files compatible with JLCPCB
+    type: excellon
+    dir: exports/gerbers/jlcpcb
     options:
       metric_units: false
       minimal_header: true
@@ -49,26 +51,30 @@ outputs:
       output: "%f%i.drl"
 
   - type: gerb_drill
-    name: PCBWay Gerber Drill 
+    name: JLCPCB Gerber Drill 
     dir: exports/gerbers
     options:
 
   - type: position
-    name: PCBWay PnP file
+    name: JLCPCB PnP file
     dir: exports/gerbers
 
-  - type: compress
-    name: ZIP file for PCBWay    
+  - name: JLCPCB
+    comment: ZIP file for JLCPCB
+    type: compress
     dir: exports/gerbers
     options:
       format: ZIP
-      output: "%f-%r-pcbway.%x"
+      output: "%f-%r-jlcpcb.%x"
       files:
-        - from_output: 'PCBWay Gerbers'
+        - from_output: 'JLCPCB Gerbers'
           dest: /
-        - from_output: 'PCBWay Drill'
+        - from_output: 'JLCPCB Drill'
           dest: /
-        - from_output: 'PCBWay Gerber Drill'
+        - from_output: 'JLCPCB Gerber Drill'
           dest: /
-        - from_output: 'PCBWay PnP file'
+        - from_output: 'JLCPCB PnP file'
           dest: /
+
+
+  

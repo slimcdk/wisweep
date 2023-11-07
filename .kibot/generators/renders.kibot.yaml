@@ -3,15 +3,15 @@ kibot:
 
 
 outputs:
-  - name: step
-    type: step
+  - type: step
+    name: STEP model
     dir: exports
     options:
       output: "%f-%r.%x"
       metric_units: true
       
   - type: render_3d
-    name: render top
+    name: Render Top View
     dir: exports/renders
     options:
       # output: render_top
@@ -26,7 +26,7 @@ outputs:
 
 
   - type: render_3d
-    name: render bottom
+    name: Render Bottom View
     dir: exports/renders
     options:
       # output: render_bottom
@@ -40,7 +40,7 @@ outputs:
       wait_render: -600
 
   - type: render_3d
-    name: render angled
+    name: Render Angled View
     dir: exports/renders
     options:
       # output: render_angled_2
@@ -91,19 +91,19 @@ outputs:
   #     transparent_background: true
   #     wait_render: -600
 
-  - name: pcb_top
-    type: pcbdraw
-    dir: exports/renders
-    options:
-      format: jpg
-      # show_components: none
-      dpi: 600
+  # - type: pcbdraw
+  #   name: Draw Top PCB
+  #   dir: exports/renders
+  #   options:
+  #     format: jpg
+  #     # show_components: none
+  #     dpi: 600
 
-  - name: pcb_bot
-    type: pcbdraw
-    dir: exports/renders
-    options:
-      format: jpg
-      bottom: True
-      # show_components: none
-      dpi: 600
+  # - type: pcbdraw
+  #   name: Draw Bottom PCB
+  #   dir: exports/renders
+  #   options:
+  #     format: jpg
+  #     bottom: True
+  #     # show_components: none
+  #     dpi: 600

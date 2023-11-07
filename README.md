@@ -10,7 +10,7 @@ Compact WiFi and Bluetooth (5.0) / ZigBee NEMA17 stepper controller featuring st
 
 Clone repository and fetch submodules
 ```bash
-$ git clone --recurse-submodules git@github.com:slimcdk/esp-stepper-servo.git
+$ git clone --recursive-submodules git@github.com:slimcdk/esp-stepper-servo.git
 ```
 
 

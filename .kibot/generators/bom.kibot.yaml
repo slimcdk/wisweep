@@ -8,6 +8,15 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
 
+  - type: kicost
+    name: Costs
+    dir: exports
+    options:
+      output: "%f-%i-%r.%x"
+      currency: USD
+      number: 1
+
+
   # - type: kibom
   #   name: KiBOM
   #   dir: exports/

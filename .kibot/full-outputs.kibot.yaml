@@ -21,10 +21,25 @@ global:
       - name: ESPRESSIF_3DMODELS
         value: dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
 
+  field_lcsc_part: lcsc_part_number
+  field_tolerance: Tolerance
+  field_voltage: Voltage
+  filed_package: Package
+  hide_excluded: true
+  cross_using_kicad: true 
+  pcb_material: FR4
+  pcb_finish: HAL
+  silk_screen_color: white
+  solder_mask_color: black
+
+
+
 import:
+  - generators/project.kibot.yaml
   - generators/sch-docs.kibot.yaml
   - generators/pcb-docs.kibot.yaml
   - generators/gerbers-pcbway.kibot.yaml  
+  - generators/gerbers-jlcpcb.kibot.yaml  
   - generators/bom.kibot.yaml
   - generators/renders.kibot.yaml
   - generators/design-report.kibot.yaml

@@ -1,0 +1,21 @@
+kibot:
+  version: 1
+
+outputs:
+  - type: kikit_present
+    name: Project Presentation
+    dir: exports
+    options:
+      name: ESP Stepper Servo
+      description: README.md
+      # repository: get from git remote get-url origin
+      boards:
+        name: Driver Board
+        back_image: Render Bottom View
+        front_image: Render Angled View
+
+  # - type: populate
+  #   name: Board Assembly
+  #   dir: exports
+  #   options:
+  #     format: html
