@@ -51,7 +51,6 @@ outputs:
   - type: gerb_drill
     name: PCBWay Gerber Drill 
     dir: exports/gerbers
-    options:
 
   - type: position
     name: PCBWay PnP file
