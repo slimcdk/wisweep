@@ -10,15 +10,6 @@ outputs:
       output: "%f-%i-%r.%x"
       monochrome: false
 
-  # - type: diff
-  #   name: Schematic changes
-  #   dir: exports
-  #   layers: all
-    # options:
-    #   output: "%f-%i-%r.%x"
-    #   monochrome: false
-    
-    
 
   # - type: svg_sch_print
   #   name: Schematic SVG

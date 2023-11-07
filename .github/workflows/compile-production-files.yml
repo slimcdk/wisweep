@@ -35,7 +35,7 @@ jobs:
         run: echo "datehash=$(git log -1 --format='%as')-$(git log -1 --pretty=format:%h)" >> $GITHUB_OUTPUT
         
       # TODO: dynamic expand all images with date and commit hash
-      # - name: Copy renders to static folder
+      # - name: Copy renders to generated folder
       #   run: |
       #     set -e
       #     FONT=".github/artifacts/fonts/RobotoMono-Bold.ttf"
@@ -43,13 +43,13 @@ jobs:
       #     LABEL="`${{ steps.date.outputs.date }}`\n`git rev-parse --short HEAD`"
       #     convert -background black -fill white -pointsize 12 -font "$FONT" -size 300x36 label:"$LABEL" -bordercolor black -border 3 exports/renders/*.png +swap -append exports/renders/*.png
 
-      - name: Commit renders to static folder
+      - name: Commit renders to generated folder
         run: |
-          mkdir -p static/images/
-          cp -r exports/renders/*.png static/images/        
+          mkdir -p generated/images/
+          cp -r exports/renders/*.png generated/images/
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add -f static/images
+          git add -f generated/images
           git commit -m "latest renders"
           git push
 
