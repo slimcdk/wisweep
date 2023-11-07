@@ -43,15 +43,17 @@ jobs:
       #     LABEL="`${{ steps.date.outputs.date }}`\n`git rev-parse --short HEAD`"
       #     convert -background black -fill white -pointsize 12 -font "$FONT" -size 300x36 label:"$LABEL" -bordercolor black -border 3 exports/renders/*.png +swap -append exports/renders/*.png
 
-      # - name: Commit renders to static folder
-      #   run: |
-      #     mkdir -p static/images/
-      #     cp -r exports/renders/*.png static/images/
-      #     git config user.name github-actions
-      #     git config user.email github-actions@github.com
-      #     git add -f static/images
-      #     git commit -m "latest renders"
-      #     git push
+      - name: Commit renders to static folder
+        run: |
+          mkdir -p static/images/
+          cp -r exports/renders/*.png static/images/
+          cp static/images/driver-board-render-3-*.png driver-board-render-3.png
+          
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -f static/images
+          git commit -m "latest renders"
+          git push
 
       - name: Archive project artifacts
         uses: actions/upload-artifact@v3
@@ -78,3 +80,4 @@ jobs:
             exports/renders/*.png
             exports/renders/*.jpg
             exports/driver-board-*.step
+            exports/project
