@@ -34,6 +34,14 @@ global:
   solder_mask_color: black
 
 
+filters:
+  - type: field_rename
+    name: KiCost fields
+    comment: Rename fields
+    rename:
+      - field: mfr_part_number
+        name: manf_num
+
 
 import:
   - generators/project.kibot.yaml

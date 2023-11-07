@@ -1,18 +1,16 @@
 {
-	"name": "ESP Stepper Servo",
+	"name": "Kibot",
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "."
 	},
 	"postCreateCommand": {
-		"dev-permission": "sudo chmod a+rw /dev/ttyUSB0",
 		"submodules": "git submodule update --init --recursive"
 	},
 	"mounts": [
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	],
 	"runArgs": [
-		"--net=host",
 		"--privileged"
 	],
 	"features": {
@@ -24,14 +22,11 @@
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "3.10"
 		},
-		"ghcr.io/devcontainers-contrib/features/pipx-package:1": {
-			"package": "esptool"
-		},
 		"ghcr.io/devcontainers/features/go:1": {
 			"version": "1.20"
 		},
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
-		"ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {},
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2.1.0": {},
 		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
 		"ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
 	},
@@ -39,28 +34,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"espressif.esp-idf-extension",
-				"ms-vscode.cmake-tools",
-				"ms-vscode.cpptools",
-				"redhat.vscode-yaml",
-				"dbaeumer.vscode-eslint",
-				"ms-edgedevtools.vscode-edge-devtools",
-				"firefox-devtools.vscode-firefox-debug",
-				"ms-azuretools.vscode-docker",
-				"donjayamanne.githistory",
-				"eamodio.gitlens",
-				"StefanAltheimer.mongoose-os-ide-extended",
-				"mongoose-os.mongoose-os-ide",
-				"alxandr.mongoose-deps-gen",
-				"ms-vscode.cpptools-extension-pack"
-			],
-			"settings": {
-				"idf.showOnboardingOnInit": false,
-				"idf.toolsPath": "/home/vscode/.espressif",
-				"idf.espIdfPath": "/home/vscode/espidf",
-				"idf.pythonBinPath": "/usr/local/python",
-				"idf.port": "/dev/ttyUSB0"
-			}
+				"redhat.vscode-yaml"
+			]
 		}
 	}
 }

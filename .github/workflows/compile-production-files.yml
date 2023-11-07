@@ -79,3 +79,6 @@ jobs:
             exports/renders/*.jpg
             exports/driver-board-*.step
             exports/project
+
+
+            exports/kicost

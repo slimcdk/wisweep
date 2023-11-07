@@ -9,23 +9,42 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
 
-  # - type: netlist
-  #   name: Generate Netlist XML
-  #   dir: exports
-  #   options:
-  #     output: "%f-%i-%r.%x"
+  - name: 'bom_internal'
+    comment: "Bill of Materials with prices"
+    type: bom
+    dir: exports/kicost
+    options:
+      use_alt: true
+      number: 1
+      group_fields: ['Part', 'Part Lib', 'Value', 'Footprint', 'Footprint Lib']
+      columns:
+        - References
+        - Part
+        - Value
+        - Quantity Per PCB
+        - field: manf
+          name: Manufacturer
+        - field: manf#
+          name: Manufacturer P/N
+        - field: digikey#
+          level: 1
+          comment: 'Code used to buy the part at Digi-Key'
+      xlsx:
+        kicost: true
+        specs: true
 
   - type: ibom
     name: Interactive BOM
     dir: exports
     options:
       output: "%f-%i-%r.%x"
-      
+
   - type: kicost
     name: Costs
     dir: exports
     options:
       output: "%f-%i-%r.%x"
+      number: 1
 
 
   # - type: kibom
