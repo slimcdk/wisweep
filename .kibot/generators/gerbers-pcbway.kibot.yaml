@@ -50,11 +50,11 @@ outputs:
 
   - type: gerb_drill
     name: PCBWay Gerber Drill 
-    dir: exports/gerbers
+    dir: exports/gerbers/pcbway
 
   - type: position
     name: PCBWay PnP file
-    dir: exports/gerbers
+    dir: exports/gerbers/pcbway
 
   - type: compress
     name: ZIP file for PCBWay    
@@ -64,10 +64,6 @@ outputs:
       output: "%f-%r-pcbway.%x"
       files:
         - from_output: 'PCBWay Gerbers'
-          dest: /
         - from_output: 'PCBWay Drill'
-          dest: /
         - from_output: 'PCBWay Gerber Drill'
-          dest: /
         - from_output: 'PCBWay PnP file'
-          dest: /

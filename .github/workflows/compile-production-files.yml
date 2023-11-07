@@ -63,19 +63,19 @@ jobs:
             # Documentations
             exports/driver-board-schematic-*.pdf
             exports/driver-board-pcb-layers-*.pdf
+            exports/driver-board-pcb-layers-*.pdf
+            exports/driver-board-design-report-*.txt
+
             exports/datasheets
+            exports/driver-board-ibom-*.html
+            driver-board-kicost-*.xlsx
 
             # Production files
             exports/gerbers/*.zip
             exports/driver-board-bom-*.csv
             
-            ## Design report
-            exports/driver-board-design-report-*.pdf
-            # driver-board-report.pdf
-
             ## Extras
             exports/renders/*.png
+            exports/renders/*.jpg
             exports/driver-board-*.step
-            exports/**/*
-
             

@@ -9,23 +9,23 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
 
-  - type: netlist
-    name: Generate Netlist XML
-    dir: exports
-    options:
-      output: "%f-%i-%r.%x"
+  # - type: netlist
+  #   name: Generate Netlist XML
+  #   dir: exports
+  #   options:
+  #     output: "%f-%i-%r.%x"
 
   - type: ibom
     name: Interactive BOM
     dir: exports
-
+    options:
+      output: "%f-%i-%r.%x"
+      
   - type: kicost
     name: Costs
     dir: exports
     options:
       output: "%f-%i-%r.%x"
-      currency: USD
-      number: 1
 
 
   # - type: kibom

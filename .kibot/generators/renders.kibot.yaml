@@ -11,9 +11,10 @@ outputs:
       metric_units: true
       
   - type: render_3d
-    name: Render Top View
+    name: PCB 3D Render 1
     dir: exports/renders
     options:
+      output: "%f-render-1-%r.%x"
       height: 1000
       width: 1600
       zoom: 2
@@ -23,9 +24,10 @@ outputs:
       transparent_background: true
 
   - type: render_3d
-    name: Render Bottom View
+    name: PCB 3D Render 2
     dir: exports/renders
     options:
+      output: "%f-render-2-%r.%x"
       height: 1000
       width: 1600
       zoom: 2
@@ -35,9 +37,10 @@ outputs:
       transparent_background: true
 
   - type: render_3d
-    name: Render Angled View
+    name: PCB 3D Render 3
     dir: exports/renders
     options:
+      output: "%f-render-3-%r.%x"
       height: 1000
       width: 1600
       zoom: 2
@@ -50,9 +53,10 @@ outputs:
       transparent_background: true
 
   - type: render_3d
-    name: Render Angled View 1
+    name: PCB 3D Render 4
     dir: exports/renders
     options:
+      output: "%f-render-4-%r.%x"
       height: 1000
       width: 1600
       zoom: 2
@@ -64,11 +68,11 @@ outputs:
       rotate_z: -4
       transparent_background: true
 
-
   - type: render_3d
-    name: render angled 3
+    name: PCB 3D Render 5
     dir: exports/renders
     options:
+      output: "%f-render-5-%r.%x"
       height: 1000
       width: 1600
       zoom: 2
@@ -81,18 +85,35 @@ outputs:
       transparent_background: true
 
   - type: pcbdraw
-    name: Draw Top PCB
+    name: PCB Top View
     dir: exports/renders
     options:
-      format: jpg
-      # show_components: none
+      output: "%f-top-view-%r.%x"
+      format: png
       dpi: 600
 
   - type: pcbdraw
-    name: Draw Bottom PCB
+    name: PCB Top View No Components
     dir: exports/renders
     options:
-      format: jpg
+      output: "%f-top-view-no-comps-%r.%x"
+      format: png
+      dpi: 600
+
+  - type: pcbdraw
+    name: PCB Bottom View
+    dir: exports/renders
+    options:
+      output: "%f-bottom-view-%r.%x"
+      format: png
       bottom: True
-      # show_components: none
+      dpi: 600
+
+  - type: pcbdraw
+    name: PCB Bottom View No Components
+    dir: exports/renders
+    options:
+      output: "%f-bottom-view-no-comps-%r.%x"
+      format: png
+      bottom: True
       dpi: 600

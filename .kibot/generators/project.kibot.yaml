@@ -4,7 +4,7 @@ kibot:
 outputs:
   - type: kikit_present
     name: Project Presentation
-    dir: exports
+    dir: exports/project
     options:
       name: ESP Stepper Servo
       description: README.md
