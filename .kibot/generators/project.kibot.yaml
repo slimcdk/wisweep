@@ -11,8 +11,8 @@ outputs:
       # repository: get from git remote get-url origin
       boards:
         name: Driver Board
-        back_image: Render Bottom View
-        front_image: Render Angled View
+        back_image: PCB 3D Render 4
+        front_image: PCB 3D Render 3
 
   # - type: populate
   #   name: Board Assembly
