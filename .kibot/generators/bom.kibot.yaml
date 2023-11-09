@@ -2,36 +2,45 @@ kibot:
   version: 1
 
 outputs:
-
   - type: bom
-    name: BOM
     dir: exports
+    name: BoM
     options:
       output: "%f-%i-%r.%x"
 
-  - name: 'bom_internal'
+  - type: bom
+    name: BoM with Prices
     comment: "Bill of Materials with prices"
-    type: bom
-    dir: exports/kicost
+    dir: exports
     options:
+      output: "%f-%i-%r.%x"
+      pre_transform: KiCost Rename Fields
       use_alt: true
       number: 1
-      group_fields: ['Part', 'Part Lib', 'Value', 'Footprint', 'Footprint Lib']
+      group_fields: ['Part', 'Value', 'Voltage', 'Tolerance']
       columns:
         - References
         - Part
         - Value
+        - Voltage
+        - Tolerance
         - Quantity Per PCB
-        - field: manf
-          name: Manufacturer
-        - field: manf#
+        - field: mfr_part_number
           name: Manufacturer P/N
-        - field: digikey#
-          level: 1
-          comment: 'Code used to buy the part at Digi-Key'
       xlsx:
         kicost: true
-        specs: true
+        specs: false
+        kicost_api_disable:
+          - KitSpace
+          - Digi-Key
+          # - TME
+          - Element14
+          - Mouser
+        # digikey_link: digikey_part_number
+        # mouser_link: mouser_part_number
+        # specs_columns:
+        #   - field: _field_lcsc_part
+      group_fields_fallbacks: ['Part', 'Value', 'Voltage', 'Tolerance']
 
   - type: ibom
     name: Interactive BOM
@@ -39,12 +48,12 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
 
-  - type: kicost
-    name: Costs
-    dir: exports
-    options:
-      output: "%f-%i-%r.%x"
-      number: 1
+  # - type: kicost
+  #   name: Costs
+  #   dir: exports
+  #   options:
+  #     output: "%f-%i-%r.%x"
+  #     number: 1
 
 
   # - type: kibom

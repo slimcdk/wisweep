@@ -185,3 +185,4 @@ exports/*
 
 *.ogv
 *.log
+.env
