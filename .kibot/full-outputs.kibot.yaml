@@ -22,26 +22,16 @@ global:
       - name: ESPRESSIF_3DMODELS
         value: dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
 
-  field_lcsc_part: lcsc_part_number
+  field_lcsc_part: LCSC
   field_tolerance: Tolerance
   field_voltage: Voltage
   field_package: Package
   hide_excluded: true
-  cross_using_kicad: true 
+  cross_using_kicad: true
   pcb_material: FR4
   pcb_finish: HAL
   silk_screen_color: white
   solder_mask_color: black
-
-
-filters:
-  - type: field_rename
-    name: KiCost Rename Fields
-    comment: Rename symbol fields from mfr_part_number to manf# for KiCost
-    rename:
-      - field: mfr_part_number
-        name: manf#
-
 
 import:
   - generators/project.kibot.yaml

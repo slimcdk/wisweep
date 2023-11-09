@@ -1,7 +1,6 @@
 kibot:
   version: 1
 
-
 outputs:
   - type: gerber
     name: PCBWay Gerbers
@@ -23,7 +22,7 @@ outputs:
       disable_aperture_macros: true
       line_width: 0.1
       subtract_mask_from_silk: false
-      inner_extension_pattern: '.gl%N'
+      inner_extension_pattern: ".gl%N"
     layers:
       - copper
       - F.SilkS
@@ -44,12 +43,12 @@ outputs:
       left_digits: 2
       right_digits: 4
       pth_and_npth_single_file: false
-      pth_id: ''
-      npth_id: '-NPTH'
+      pth_id: ""
+      npth_id: "-NPTH"
       output: "%f%i.drl"
 
   - type: gerb_drill
-    name: PCBWay Gerber Drill 
+    name: PCBWay Gerber Drill
     dir: exports/gerbers/pcbway
 
   - type: position
@@ -57,17 +56,17 @@ outputs:
     dir: exports/gerbers/pcbway
 
   - type: compress
-    name: ZIP file for PCBWay    
+    name: ZIP file for PCBWay
     dir: exports/gerbers
     options:
       format: ZIP
       output: "%f-%r-pcbway.%x"
       files:
-        - from_output: 'PCBWay Gerbers'
+        - from_output: "PCBWay Gerbers"
           dest: /
-        - from_output: 'PCBWay Drill'
+        - from_output: "PCBWay Drill"
           dest: /
-        - from_output: 'PCBWay Gerber Drill'
+        - from_output: "PCBWay Gerber Drill"
           dest: /
-        - from_output: 'PCBWay PnP file'
+        - from_output: "PCBWay PnP file"
           dest: /

@@ -1,7 +1,6 @@
 kibot:
   version: 1
 
-
 outputs:
   - type: pdf_sch_print
     name: Schematic PDF
@@ -9,7 +8,6 @@ outputs:
     options:
       output: "%f-%i-%r.%x"
       monochrome: false
-
 
   # - type: svg_sch_print
   #   name: Schematic SVG

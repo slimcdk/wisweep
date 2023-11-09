@@ -1,7 +1,6 @@
 kibot:
   version: 1
 
-
 outputs:
   - type: step
     name: STEP model
@@ -9,7 +8,7 @@ outputs:
     options:
       output: "%f-%r.%x"
       metric_units: true
-      
+
   - type: render_3d
     name: PCB 3D Render 1
     dir: exports/renders

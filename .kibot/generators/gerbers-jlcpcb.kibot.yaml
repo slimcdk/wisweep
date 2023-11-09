@@ -1,7 +1,6 @@
 kibot:
   version: 1
 
-
 outputs:
   - name: JLCPCB Gerbers
     comment: Gerbers compatible with JLCPCB
@@ -24,7 +23,7 @@ outputs:
       disable_aperture_macros: true
       line_width: 0.1
       subtract_mask_from_silk: false
-      inner_extension_pattern: '.gl%N'
+      inner_extension_pattern: ".gl%N"
     layers:
       - copper
       - F.SilkS
@@ -46,12 +45,12 @@ outputs:
       left_digits: 2
       right_digits: 4
       pth_and_npth_single_file: false
-      pth_id: ''
-      npth_id: '-NPTH'
+      pth_id: ""
+      npth_id: "-NPTH"
       output: "%f%i.drl"
 
   - type: gerb_drill
-    name: JLCPCB Gerber Drill 
+    name: JLCPCB Gerber Drill
     dir: exports/gerbers/jlcpcb
 
   - type: position
@@ -66,14 +65,11 @@ outputs:
       format: ZIP
       output: "%f-%r-jlcpcb.%x"
       files:
-        - from_output: 'JLCPCB Gerbers'
+        - from_output: "JLCPCB Gerbers"
           dest: /
-        - from_output: 'JLCPCB Drill'
+        - from_output: "JLCPCB Drill"
           dest: /
-        - from_output: 'JLCPCB Gerber Drill'
+        - from_output: "JLCPCB Gerber Drill"
           dest: /
-        - from_output: 'JLCPCB PnP file'
+        - from_output: "JLCPCB PnP file"
           dest: /
-
-
-  

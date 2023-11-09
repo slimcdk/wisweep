@@ -1,10 +1,9 @@
 kibot:
   version: 1
 
-
 outputs:
   - type: pcb_print
-    name: PCB Print 
+    name: PCB Print
     dir: exports
     options:
       output: "%f-pcb-layers-%r.%x"

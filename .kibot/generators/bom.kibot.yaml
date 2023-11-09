@@ -14,10 +14,9 @@ outputs:
     dir: exports
     options:
       output: "%f-%i-%r.%x"
-      pre_transform: KiCost Rename Fields
       use_alt: true
       number: 1
-      group_fields: ['Part', 'Value', 'Voltage', 'Tolerance']
+      group_fields: ["Part", "Value", "Voltage", "Tolerance"]
       columns:
         - References
         - Part
@@ -25,7 +24,9 @@ outputs:
         - Voltage
         - Tolerance
         - Quantity Per PCB
-        - field: mfr_part_number
+        - field: Manf
+          name: Manufacturer
+        - field: Manf#
           name: Manufacturer P/N
       xlsx:
         kicost: true
@@ -35,12 +36,19 @@ outputs:
           - Digi-Key
           # - TME
           - Element14
-          - Mouser
-        # digikey_link: digikey_part_number
-        # mouser_link: mouser_part_number
-        # specs_columns:
-        #   - field: _field_lcsc_part
-      group_fields_fallbacks: ['Part', 'Value', 'Voltage', 'Tolerance']
+          # - Mouser
+        specs_columns:
+          - field: _field_lcsc_part
+      group_fields_fallbacks: ["Part", "Value", "Voltage", "Tolerance"]
+      distributors:
+        # - Arrow
+        - DigiKey
+        # - Farnell
+        - LCSC
+        - Mouser
+        # - Newark
+        # - RS
+        # - TME
 
   - type: ibom
     name: Interactive BOM
@@ -54,7 +62,6 @@ outputs:
   #   options:
   #     output: "%f-%i-%r.%x"
   #     number: 1
-
 
   # - type: kibom
   #   name: KiBOM
