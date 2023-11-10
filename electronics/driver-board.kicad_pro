@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.049999999999999996
         }
       },
       "diff_pair_dimensions": [
@@ -56,7 +56,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|49761999|63600001|4831ce62-2ffc-4faa-afef-1ce50e7b42ef|5a92ac59-5864-4965-b52b-9c1477e3d31f",
+        "courtyards_overlap|51361999|63600001|4831ce62-2ffc-4faa-afef-1ce50e7b42ef|a57e1412-31fb-4b9b-8590-5151ffd75468",
+        "courtyards_overlap|53015999|63600001|3be7f50a-6c95-45eb-9c2d-14bba1e29a31|4831ce62-2ffc-4faa-afef-1ce50e7b42ef",
+        "courtyards_overlap|54561999|63600001|4831ce62-2ffc-4faa-afef-1ce50e7b42ef|8fc6dbcb-d631-4058-9e5d-36131a4fedd9"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -179,6 +184,7 @@
         0.0,
         0.1,
         0.2,
+        0.3,
         0.4,
         0.5,
         0.6,
