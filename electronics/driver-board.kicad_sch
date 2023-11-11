@@ -2124,7 +2124,6 @@
   (no_connect (at 182.88 164.465) (uuid 2f05444f-f912-46e8-be19-5a62a161a481))
   (no_connect (at 182.88 161.925) (uuid 379eca90-ce55-4cb1-a1bd-2cb5cdceb51a))
   (no_connect (at 361.315 201.295) (uuid 383a1b35-aa38-4738-9fc6-e35835075f4e))
-  (no_connect (at 182.88 156.845) (uuid 40e5aadb-8b06-4a6c-930b-52d84f9b103d))
   (no_connect (at 335.915 196.85) (uuid 463003cc-0606-422c-90b6-b15a1807f2be))
   (no_connect (at 335.915 191.77) (uuid 493c4f01-1b2a-4fd7-927e-24dac92aa34e))
   (no_connect (at 237.49 96.52) (uuid 662bafcb-dcfb-4471-a8a9-f5c777fdf249))
@@ -2512,10 +2511,6 @@
     (stroke (width 0) (type default))
     (uuid 575cad81-81b0-4e7f-88af-71ff3a283be5)
   )
-  (wire (pts (xy 119.38 156.845) (xy 137.795 156.845))
-    (stroke (width 0) (type default))
-    (uuid 579e4862-9d4b-4fbb-8038-9a8ac1f61f87)
-  )
   (wire (pts (xy 96.52 57.785) (xy 96.52 60.325))
     (stroke (width 0) (type default))
     (uuid 59bffa44-ba2b-4cf9-a93d-6fdaabf0bd01)
@@ -2575,6 +2570,10 @@
   (wire (pts (xy 52.07 180.975) (xy 52.07 184.785))
     (stroke (width 0) (type default))
     (uuid 6a50ed74-3bd7-49ed-9b69-1f552960f776)
+  )
+  (wire (pts (xy 119.38 156.845) (xy 182.88 156.845))
+    (stroke (width 0) (type default))
+    (uuid 6cb9d216-6eb4-4621-a958-bde00ea12f83)
   )
   (wire (pts (xy 195.58 172.72) (xy 195.58 172.085))
     (stroke (width 0) (type default))
@@ -3266,10 +3265,6 @@
     (uuid 79463748-c142-422a-8b4d-d2f71dfb45d8)
   )
 
-  (label "TMC_ENCN" (at 137.795 156.845 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid 01f90c4d-acbe-4755-95a2-feb15630f9bd)
-  )
   (label "ESP_UART_RXD" (at 380.365 43.815 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 026901cb-9827-4104-95ba-d5a769f21969)
@@ -4965,7 +4960,7 @@
   (symbol (lib_id "Device:R_Small") (at 40.64 159.385 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 69753750-b16f-45af-90d9-9350242e5378)
-    (property "Reference" "R2" (at 40.64 154.94 90)
+    (property "Reference" "R11" (at 40.64 154.94 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 40.64 156.972 90)
@@ -4991,7 +4986,7 @@
     (instances
       (project "driver-board"
         (path "/597a11f2-5d2c-4a65-ac95-38ad106e1367"
-          (reference "R2") (unit 1)
+          (reference "R11") (unit 1)
         )
       )
     )
@@ -5637,7 +5632,7 @@
   (symbol (lib_id "Device:R_Small") (at 40.64 128.905 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9ae67dd8-c9da-49f4-8c5e-5c773f987f36)
-    (property "Reference" "R11" (at 40.64 123.952 90)
+    (property "Reference" "R2" (at 40.64 123.952 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10K" (at 40.64 126.238 90)
@@ -5663,7 +5658,7 @@
     (instances
       (project "driver-board"
         (path "/597a11f2-5d2c-4a65-ac95-38ad106e1367"
-          (reference "R11") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
