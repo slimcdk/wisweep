@@ -11,5 +11,7 @@
   (lib (name "Slimc_RF_Antenna")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_RF_Antenna.pretty")(options "")(descr ""))
   (lib (name "trinamic-footprints")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/digikey-partner-kicad-library/Trinamic/trinamic-footprints.pretty")(options "")(descr ""))
   (lib (name "Slimc_Connector_Wago")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Connector_Wago.pretty")(options "")(descr ""))
-  (lib (name "Slimc_Package_SO")(type "KiCad")(uri "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/kicad-libraries/slimc/footprints/Slimc_Package_SO.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Package_SO")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Package_SO.pretty")(options "")(descr ""))
+  (lib (name "Slimc_Button_Switch_SMD")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/footprints/Slimc_Button_Switch_SMD.pretty")(options "")(descr ""))
+  (lib (name "SparkFun-Connector")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/SparkFun-KiCad-Libraries/Footprints/SparkFun-Connector.pretty")(options "")(descr ""))
 )
