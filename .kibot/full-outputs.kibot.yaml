@@ -37,8 +37,7 @@ import:
   - generators/project.kibot.yaml
   - generators/sch-docs.kibot.yaml
   - generators/pcb-docs.kibot.yaml
-  - generators/gerbers-pcbway.kibot.yaml
-  - generators/gerbers-jlcpcb.kibot.yaml
+  - generators/gerbers.kibot.yaml
   - generators/bom.kibot.yaml
   - generators/renders.kibot.yaml
   - generators/design-report.kibot.yaml

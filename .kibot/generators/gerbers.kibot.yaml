@@ -2,9 +2,9 @@ kibot:
   version: 1
 
 outputs:
-  - type: gerber
-    name: PCBWay Gerbers
-    dir: exports/gerbers/pcbway
+  - name: Gerbers
+    type: gerber
+    dir: exports/gerbers
     options:
       exclude_edge_layer: true
       exclude_pads_from_silkscreen: true
@@ -33,9 +33,9 @@ outputs:
       - B.Paste
       - Edge.Cuts
 
-  - type: excellon
-    name: PCBWay Drill
-    dir: exports/gerbers/pcbway
+  - name: Drill
+    type: excellon
+    dir: exports/gerbers
     options:
       metric_units: false
       minimal_header: true
@@ -48,25 +48,25 @@ outputs:
       output: "%f%i.drl"
 
   - type: gerb_drill
-    name: PCBWay Gerber Drill
-    dir: exports/gerbers/pcbway
+    name: Gerber Drill
+    dir: exports/gerbers
 
   - type: position
-    name: PCBWay PnP file
-    dir: exports/gerbers/pcbway
+    name: PnP file
+    dir: exports/gerbers
 
-  - type: compress
-    name: ZIP file for PCBWay
+  - name: Archive
+    type: compress
     dir: exports/gerbers
     options:
       format: ZIP
-      output: "%f-%r-pcbway.%x"
+      output: "%f-%r.%x"
       files:
-        - from_output: "PCBWay Gerbers"
+        - from_output: "Gerbers"
           dest: /
-        - from_output: "PCBWay Drill"
+        - from_output: "Drill"
           dest: /
-        - from_output: "PCBWay Gerber Drill"
+        - from_output: "Gerber Drill"
           dest: /
-        - from_output: "PCBWay PnP file"
+        - from_output: "PnP file"
           dest: /
