@@ -57,10 +57,10 @@ outputs:
 
   - name: Archive
     type: compress
-    dir: exports/gerbers
+    dir: exports
     options:
       format: ZIP
-      output: "%f-%r.%x"
+      output: "%f-gerbers-%r.%x"
       files:
         - from_output: "Gerbers"
           dest: /

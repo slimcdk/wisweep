@@ -78,7 +78,7 @@ jobs:
             exports/driver-board-*.xlsx
 
             # Production files
-            exports/gerbers/*.zip
+            exports/driver-board-gerbers-*.zip
             exports/driver-board-bom-*.csv
 
             ## Extras
@@ -86,6 +86,3 @@ jobs:
             exports/renders/*.jpg
             exports/driver-board-*.step
             exports/project
-
-
-            exports/kicost
