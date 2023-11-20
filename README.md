@@ -1,16 +1,16 @@
-# ESP Stepper Servo
+# WiSweep
 
 Compact WiFi and Bluetooth (5.0) / ZigBee NEMA17 stepper controller featuring stall detection and ultra silent operation. Supply 5-35V upto 3A.
 
 ![the picture](generated/images/driver-board-render-3.png)
 
 ## Production files
-[![Compile production files](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml/badge.svg)](https://github.com/slimcdk/esp-stepper-servo/actions/workflows/compile-production-files.yml)
+[![Compile production files](https://github.com/slimcdk/wisweep/actions/workflows/compile-production-files.yml/badge.svg)](https://github.com/slimcdk/wisweep/actions/workflows/compile-production-files.yml)
 ## Contribution
 
 Clone repository and fetch submodules
 ```bash
-$ git clone --recursive-submodules git@github.com:slimcdk/esp-stepper-servo.git
+$ git clone --recursive-submodules git@github.com:slimcdk/wisweep.git
 ```
 
 

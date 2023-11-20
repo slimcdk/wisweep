@@ -6,7 +6,7 @@ outputs:
     name: Project Presentation
     dir: exports/project
     options:
-      name: ESP Stepper Servo
+      name: WiSweep
       description: README.md
       # repository: get from git remote get-url origin
       boards:

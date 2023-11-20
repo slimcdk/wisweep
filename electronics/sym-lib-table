@@ -9,5 +9,5 @@
   (lib (name "Slimc_74xx")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/slimc/symbols/Slimc_74xx.kicad_sym")(options "")(descr ""))
   (lib (name "trinamic")(type "Legacy")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/digikey-partner-kicad-library/Trinamic/trinamic.lib")(options "")(descr ""))
   (lib (name "Espressif")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/espressif-kicad-libraries/symbols/Espressif.kicad_sym")(options "")(descr ""))
-  (lib (name "SparkFun-Connector")(type "KiCad")(uri "/home/christian/Projects/smarthome-projects/esp-stepper-servo/dependencies/kicad-libraries/SparkFun-KiCad-Libraries/Symbols/SparkFun-Connector.kicad_sym")(options "")(descr ""))
+  (lib (name "SparkFun-Connector")(type "KiCad")(uri "${KIPRJMOD}/../dependencies/kicad-libraries/SparkFun-KiCad-Libraries/Symbols/SparkFun-Connector.kicad_sym")(options "")(descr ""))
 )
