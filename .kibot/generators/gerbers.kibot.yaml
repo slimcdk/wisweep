@@ -55,7 +55,7 @@ outputs:
     name: PnP file
     dir: exports
     options:
-      format: csv
+      format: CSV
       output: "%f-%i%I%v-smd-%r.%x"
 
   - name: Archive
