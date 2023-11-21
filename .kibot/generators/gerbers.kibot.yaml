@@ -57,6 +57,17 @@ outputs:
     options:
       format: CSV
       output: "%f-%i%I%v-smd-%r.%x"
+      columns:
+        - id: Ref
+          name: Designator
+        - id: PosX
+          name: Mid X
+        - id: PosY
+          name: Mid Y
+        - id: Rot
+          name: Rotation
+        - id: Side
+          name: Layer
 
   - name: Archive
     type: compress
