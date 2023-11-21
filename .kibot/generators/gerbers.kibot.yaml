@@ -53,7 +53,10 @@ outputs:
 
   - type: position
     name: PnP file
-    dir: exports/gerbers
+    dir: exports
+    options:
+      format: csv
+      output: "%f-%i%I%v-smd-%r.%x"
 
   - name: Archive
     type: compress
@@ -67,6 +70,4 @@ outputs:
         - from_output: "Drill"
           dest: /
         - from_output: "Gerber Drill"
-          dest: /
-        - from_output: "PnP file"
           dest: /
