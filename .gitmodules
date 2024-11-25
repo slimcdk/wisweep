@@ -16,3 +16,6 @@
 [submodule "dependencies/kicad-libraries"]
 	path = dependencies/kicad-libraries
 	url = git@github.com:slimcdk/kicad-libraries.git
+[submodule "dependencies/custom-design-rules"]
+	path = dependencies/custom-design-rules
+	url = git@github.com:Cimos/KiCad-CustomDesignRules.git

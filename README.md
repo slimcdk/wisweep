@@ -28,4 +28,8 @@ Revisions are controlled through git tags such any production easily can be trac
   * https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers
 
 
-## Production notes
+## Notes
+
+### Parts
+
+`VKMB1001H330MV` can be hard to source - `VKMB1001H220MV` (22µF variant) is an alternative.
