@@ -16,7 +16,7 @@ outputs:
       output: "%f-render-1.%x"
       height: 1000
       width: 1600
-      zoom: 0
+      zoom: -2
       download: true
       ray_tracing: true
       view: top
@@ -29,7 +29,7 @@ outputs:
       output: "%f-render-2.%x"
       height: 1000
       width: 1600
-      zoom: 0
+      zoom: -2
       download: true
       ray_tracing: true
       view: bottom
@@ -42,7 +42,7 @@ outputs:
       output: "%f-render-3.%x"
       height: 1000
       width: 1600
-      zoom: 0
+      zoom: -2
       download: true
       ray_tracing: true
       view: front
@@ -58,7 +58,7 @@ outputs:
       output: "%f-render-4.%x"
       height: 1000
       width: 1600
-      zoom: 0
+      zoom: -2
       download: true
       ray_tracing: true
       view: front
@@ -74,7 +74,7 @@ outputs:
       output: "%f-render-5.%x"
       height: 1000
       width: 1600
-      zoom: 0
+      zoom: -2
       download: true
       ray_tracing: true
       view: front
