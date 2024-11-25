@@ -65,6 +65,7 @@ outputs:
       rotate_x: -4
       rotate_y: 0
       rotate_z: -4
+      move_z: -2
       transparent_background: true
 
   - type: render_3d
