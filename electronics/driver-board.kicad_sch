@@ -1850,171 +1850,6 @@
 				)
 			)
 		)
-		(symbol "Device:D_Small"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at -1.27 2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "D_Small"
-				(at -3.81 -2.032 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode, small symbol"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Small_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Small_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.778)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.778)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:L"
 			(pin_numbers hide)
 			(pin_names
@@ -6423,7 +6258,7 @@
 		(uuid "3bad63c9-7ac4-497e-810a-93b73b56d5c4")
 	)
 	(junction
-		(at 72.39 45.72)
+		(at 71.12 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "43834976-fa10-4b07-bf08-f417186b66b3")
@@ -6890,7 +6725,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 43.18) (xy 69.85 43.18)
+			(xy 71.12 43.18) (xy 69.85 43.18)
 		)
 		(stroke
 			(width 0)
@@ -7040,7 +6875,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 186.69) (xy 165.1 186.69)
+			(xy 149.86 186.69) (xy 152.4 186.69)
 		)
 		(stroke
 			(width 0)
@@ -7340,7 +7175,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 181.61) (xy 181.61 181.61)
+			(xy 181.61 184.15) (xy 180.34 184.15)
 		)
 		(stroke
 			(width 0)
@@ -7770,7 +7605,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 184.15) (xy 171.45 184.15)
+			(xy 149.86 184.15) (xy 170.18 184.15)
 		)
 		(stroke
 			(width 0)
@@ -8220,7 +8055,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 45.72) (xy 72.39 45.72)
+			(xy 69.85 45.72) (xy 71.12 45.72)
 		)
 		(stroke
 			(width 0)
@@ -8230,7 +8065,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 43.18) (xy 72.39 45.72)
+			(xy 71.12 43.18) (xy 71.12 45.72)
 		)
 		(stroke
 			(width 0)
@@ -8460,7 +8295,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 181.61) (xy 171.45 181.61)
+			(xy 149.86 181.61) (xy 170.18 181.61)
 		)
 		(stroke
 			(width 0)
@@ -8580,7 +8415,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 184.15) (xy 182.88 184.15)
+			(xy 180.34 181.61) (xy 181.61 181.61)
 		)
 		(stroke
 			(width 0)
@@ -8820,7 +8655,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 189.23) (xy 165.1 189.23)
+			(xy 149.86 189.23) (xy 152.4 189.23)
 		)
 		(stroke
 			(width 0)
@@ -8920,7 +8755,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 45.72) (xy 72.39 48.26)
+			(xy 71.12 45.72) (xy 71.12 50.8)
 		)
 		(stroke
 			(width 0)
@@ -9361,7 +9196,7 @@
 		(uuid "0ddfa564-7ae2-41d2-bc57-732e1054edc2")
 	)
 	(label "TMC_REFL"
-		(at 182.88 181.61 0)
+		(at 181.61 184.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9966,7 +9801,7 @@
 		(uuid "9792d499-220d-42c5-a4ed-0182197d0a29")
 	)
 	(label "TMC_REFR"
-		(at 182.88 184.15 0)
+		(at 181.61 181.61 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12200,7 +12035,7 @@
 		(dnp no)
 		(uuid "2094bb53-f48d-494f-9d4e-f7afb5f22509")
 		(property "Reference" "R3"
-			(at 73.66 45.72 90)
+			(at 72.644 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12209,7 +12044,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 78.105 45.72 90)
+			(at 77.089 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12245,7 +12080,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 82.55 45.72 90)
+			(at 81.534 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13001,7 +12836,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 72.39 48.26 0)
+		(at 71.12 50.8 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13009,7 +12844,7 @@
 		(dnp no)
 		(uuid "45942205-4fa4-4c36-8cc2-2f229d7fccd2")
 		(property "Reference" "#PWR042"
-			(at 72.39 54.61 0)
+			(at 71.12 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13018,7 +12853,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 72.517 52.6542 0)
+			(at 71.247 55.1942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13026,7 +12861,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 48.26 0)
+			(at 71.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13035,7 +12870,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 48.26 0)
+			(at 71.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13044,7 +12879,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 72.39 48.26 0)
+			(at 71.12 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13672,7 +13507,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 176.53 181.61 0)
+		(at 175.26 184.15 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -13680,7 +13515,7 @@
 		(dnp no)
 		(uuid "56b66269-968c-42f8-80f3-6f5a48373b03")
 		(property "Reference" "JP3"
-			(at 176.53 178.562 0)
+			(at 175.26 185.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13688,7 +13523,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 176.53 177.8 0)
+			(at 175.26 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13697,7 +13532,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 176.53 181.61 0)
+			(at 175.26 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13706,7 +13541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 181.61 0)
+			(at 175.26 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13715,7 +13550,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 176.53 181.61 0)
+			(at 175.26 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14005,7 +13840,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 176.53 184.15 0)
+		(at 175.26 181.61 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -14014,7 +13849,7 @@
 		(dnp no)
 		(uuid "64ae27d6-cd96-4d4c-a9fa-4cc1bb6f93cb")
 		(property "Reference" "JP4"
-			(at 176.53 186.182 0)
+			(at 175.006 178.308 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14022,7 +13857,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Open"
-			(at 176.53 180.34 0)
+			(at 175.26 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14031,7 +13866,7 @@
 			)
 		)
 		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm"
-			(at 176.53 184.15 0)
+			(at 175.26 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14040,7 +13875,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 184.15 0)
+			(at 175.26 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14049,7 +13884,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 176.53 184.15 0)
+			(at 175.26 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15529,7 +15364,7 @@
 		(dnp no)
 		(uuid "89d9c0ab-9ff7-4716-8dbf-5c8028d4966f")
 		(property "Reference" "R5"
-			(at 73.66 43.18 90)
+			(at 72.644 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15538,7 +15373,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 78.105 43.18 90)
+			(at 77.089 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15574,7 +15409,7 @@
 			)
 		)
 		(property "Tolerance" "1%"
-			(at 82.55 43.18 90)
+			(at 81.534 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19001,93 +18836,6 @@
 			(project "driver-board"
 				(path "/597a11f2-5d2c-4a65-ac95-38ad106e1367"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Small")
-		(at 81.28 33.02 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
-		(dnp yes)
-		(uuid "ef0b5532-a19f-4a9f-bb1c-177598e76954")
-		(property "Reference" "D2"
-			(at 83.82 31.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "D_Small"
-			(at 83.82 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 33.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bf940f96-2b9c-455f-a751-0fc9c9021663")
-		)
-		(pin "1"
-			(uuid "0ce66001-85e5-4277-947f-10ad6813f6cd")
-		)
-		(instances
-			(project "driver-board"
-				(path "/597a11f2-5d2c-4a65-ac95-38ad106e1367"
-					(reference "D2")
 					(unit 1)
 				)
 			)
