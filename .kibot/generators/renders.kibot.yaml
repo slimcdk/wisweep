@@ -48,7 +48,7 @@ outputs:
       view: front
       rotate_x: -5
       rotate_y: 0
-      rotate_z: 6
+      rotate_z: 4
       move_y: 2
       transparent_background: true
 
@@ -63,7 +63,7 @@ outputs:
       download: true
       ray_tracing: true
       view: front
-      rotate_x: -4
+      rotate_x: -5
       rotate_y: 0
       rotate_z: -4
       move_y: 2
@@ -86,31 +86,31 @@ outputs:
       move_y: -2
       transparent_background: true
 
-  - type: render_3d
-    name: PCB 3D Render 6
-    dir: exports/renders
-    options:
-      output: "%f-render-6.%x"
-      height: 1000
-      width: 1600
-      zoom: -2
-      download: true
-      ray_tracing: true
-      view: front
-      rotate_x: -4.5
-      rotate_y: 0
-      rotate_z: 3
-      move_y: 2
-      transparent_background: true
+  # - type: render_3d
+  #   name: PCB 3D Render 6
+  #   dir: exports/renders
+  #   options:
+  #     output: "%f-render-6.%x"
+  #     height: 1000
+  #     width: 1600
+  #     zoom: -2
+  #     download: true
+  #     ray_tracing: true
+  #     view: front
+  #     rotate_x: -4.5
+  #     rotate_y: 0
+  #     rotate_z: 3
+  #     move_y: 2
+  #     transparent_background: true
 
-  - type: pcbdraw
-    name: PCB Top View
-    dir: exports/renders
-    options:
-      output: "%f-top-view.%x"
-      format: png
-      dpi: 600
-      show_components: all
+  # - type: pcbdraw
+  #   name: PCB Top View
+  #   dir: exports/renders
+  #   options:
+  #     output: "%f-top-view.%x"
+  #     format: png
+  #     dpi: 600
+  #     show_components: all
 
   - type: pcbdraw
     name: PCB Top View No Components
@@ -120,15 +120,15 @@ outputs:
       format: png
       dpi: 600
 
-  - type: pcbdraw
-    name: PCB Bottom View
-    dir: exports/renders
-    options:
-      output: "%f-bottom-view.%x"
-      format: png
-      bottom: true
-      dpi: 600
-      show_components: all
+  # - type: pcbdraw
+  #   name: PCB Bottom View
+  #   dir: exports/renders
+  #   options:
+  #     output: "%f-bottom-view.%x"
+  #     format: png
+  #     bottom: true
+  #     dpi: 600
+  #     show_components: all
 
   - type: pcbdraw
     name: PCB Bottom View No Components

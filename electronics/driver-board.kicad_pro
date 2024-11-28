@@ -724,10 +724,10 @@
   ],
   "text_variables": {
     "DATE_REPLACE": "2022-05-25",
-    "commit": "1ffcd8e",
+    "commit": "41c094f",
     "commit_long": "abc5fc4a894f32302d7b4985fbf801590768d1d1",
     "commit_short": "abc5fc4",
-    "date": "2024-11-28",
+    "date": "2024-11-29",
     "version": "577a51b"
   }
 }
