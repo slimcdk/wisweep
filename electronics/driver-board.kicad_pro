@@ -1,6 +1,26 @@
 {
   "board": {
-    "3dviewports": [],
+    "3dviewports": [
+      {
+        "name": "qwe",
+        "ww": 1.0,
+        "wx": -2.9089510440826416,
+        "wy": 19.263874053955078,
+        "wz": -34.62068176269531,
+        "xw": 0.0,
+        "xx": 0.7890335321426392,
+        "xy": -0.483244389295578,
+        "xz": 0.3793426752090454,
+        "yw": 0.0,
+        "yx": 0.6138638854026794,
+        "yy": 0.6447182893753052,
+        "yz": -0.45553135871887207,
+        "zw": 0.0,
+        "zx": -0.02443636767566204,
+        "zy": 0.5922933220863342,
+        "zz": 0.8053523898124695
+      }
+    ],
     "design_settings": {
       "defaults": {
         "apply_defaults_to_fp_fields": false,
@@ -49,7 +69,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -704,10 +724,10 @@
   ],
   "text_variables": {
     "DATE_REPLACE": "2022-05-25",
-    "commit": "67c5800",
+    "commit": "9a65830",
     "commit_long": "abc5fc4a894f32302d7b4985fbf801590768d1d1",
     "commit_short": "abc5fc4",
-    "date": "2023-11-09",
+    "date": "2024-11-28",
     "version": "577a51b"
   }
 }
