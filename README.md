@@ -2,7 +2,7 @@
 
 Compact WiFi and Bluetooth (5.0) / ZigBee NEMA17 stepper controller featuring stall detection and ultra silent operation. Supply 5-36V upto 3A.
 
-![the picture](generated/images/driver-board-render-3.png)
+![the picture](generated/images/driver-board-render-6.png)
 
 ## Production files
 

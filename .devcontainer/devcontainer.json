@@ -7,7 +7,7 @@
 	"postCreateCommand": {
 		"submodules": "git submodule update --init --recursive"
 	},
-	"remoteUser": "vscode",
+	// "remoteUser": "vscode",
 	"mounts": [
 		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
 	],
@@ -23,13 +23,13 @@
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "3.10"
 		},
-		"ghcr.io/devcontainers/features/go:1": {
-			"version": "1.20"
-		},
+		// "ghcr.io/devcontainers/features/go:1": {
+		// 	"version": "1.21"
+		// },
 		"ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
-		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2.1.0": {},
+		// "ghcr.io/eitsupi/devcontainer-features/jq-likes:2.1.0": {},
 		"ghcr.io/eliises/devcontainer-features/devcontainers-cli:1": {},
-		"ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
+		// "ghcr.io/devcontainers-contrib/features/grpcurl-asdf:2": {}
 	},
 	
 	"customizations": {

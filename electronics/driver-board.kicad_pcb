@@ -141,12 +141,6 @@
 			(outputdirectory "../exports/gerbers/")
 		)
 	)
-	(property "DATE_REPLACE" "2022-05-25")
-	(property "commit" "9a65830")
-	(property "commit_long" "abc5fc4a894f32302d7b4985fbf801590768d1d1")
-	(property "commit_short" "abc5fc4")
-	(property "date" "2024-11-28")
-	(property "version" "577a51b")
 	(net 0 "")
 	(net 1 "GND")
 	(net 2 "+3V3")
@@ -1212,7 +1206,7 @@
 			(pintype "passive")
 			(uuid "fd79eefb-cf41-452a-864a-143c620dcd57")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1531,7 +1525,7 @@
 			(pintype "output")
 			(uuid "dffc3687-2c36-4a91-802f-9eafb03248dd")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-6.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1790,7 +1784,7 @@
 			(pintype "passive")
 			(uuid "4da353ce-ee55-4367-ba8b-90cf5258ac71")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2049,7 +2043,7 @@
 			(pintype "passive")
 			(uuid "5c377dfe-0948-44f4-94c6-1a011a548e4d")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2605,7 +2599,7 @@
 			(pintype "passive")
 			(uuid "a6b94e30-3ad7-4c69-bc4d-d3b362bd1005")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2852,7 +2846,7 @@
 			(pintype "passive")
 			(uuid "38a5ff89-559f-4ab8-ac93-4bf14001bf6f")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4023,7 +4017,7 @@
 			(pintype "passive")
 			(uuid "ff2f69cc-8058-4307-b24e-26088da6f802")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_B3U-1000P.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5180,7 +5174,7 @@
 			(pintype "passive")
 			(uuid "060f1368-47ae-4f7f-ac2e-90df3e0f4051")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5427,7 +5421,7 @@
 			(pintype "passive")
 			(uuid "dd00f161-a416-4128-b88a-5f4087121b5e")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6327,7 +6321,7 @@
 			(pintype "power_out")
 			(uuid "f4399a9e-b91b-4157-bbc7-06c5a48e5037")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-38_4.4x9.7mm_P0.5mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-38_4.4x9.7mm_P0.5mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6816,7 +6810,7 @@
 			(pintype "passive")
 			(uuid "c0f7e410-380e-43a9-8ac6-fda57daca269")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.9.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.9.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7398,7 +7392,7 @@
 			(pintype "passive")
 			(uuid "79362e47-0c4b-4173-883e-1e0117a29f0f")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7645,7 +7639,7 @@
 			(pintype "passive")
 			(uuid "654987a5-a8c0-4f64-b0d0-26f8b542a03b")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -7904,7 +7898,7 @@
 			(pintype "passive")
 			(uuid "41017892-938d-4466-92ea-f728ba45e1cd")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8151,7 +8145,7 @@
 			(pintype "passive")
 			(uuid "0afa425d-f0f3-4986-8c39-48d7377cd959")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8398,7 +8392,7 @@
 			(pintype "passive")
 			(uuid "52aab54a-be57-4d1b-978a-8ff2c54c8c82")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8645,7 +8639,7 @@
 			(pintype "passive")
 			(uuid "cda3326b-e31a-44ae-9eb4-8392f5acbf48")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8891,7 +8885,7 @@
 			(pintype "passive")
 			(uuid "999e4706-bb5d-4f8b-8068-00fc44a8cb55")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9178,7 +9172,7 @@
 			(pintype "passive")
 			(uuid "7ccb19c7-b380-4129-a746-7ee7311d013e")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Vishay_IFSC-1515AH_4x4x1.8mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Vishay_IFSC-1515AH_4x4x1.8mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9756,7 +9750,7 @@
 			(pintype "passive")
 			(uuid "390feead-986b-4081-abc7-9bf40eb13de2")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10298,7 +10292,7 @@
 			(pintype "passive")
 			(uuid "f3770fb7-c3e0-4ab5-9bea-e68529e51f87")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11084,7 +11078,7 @@
 			(pintype "passive")
 			(uuid "082c64b2-5af7-4ea7-b743-2aaad4a99f9a")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.9.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/CP_Elec_5x5.9.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11331,7 +11325,7 @@
 			(pintype "passive")
 			(uuid "35336974-48b6-44f6-af02-05eb2969a506")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11590,7 +11584,7 @@
 			(pintype "passive")
 			(uuid "487bb885-299f-4cc2-b511-6e945495431d")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -11849,7 +11843,7 @@
 			(pintype "passive")
 			(uuid "8182c385-7c0d-420f-8a52-cb95979eb0fe")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12120,7 +12114,7 @@
 			(pintype "passive")
 			(uuid "346b82d3-b5eb-44f1-a775-a42e3a18400c")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -12801,7 +12795,7 @@
 			(pintype "passive")
 			(uuid "4fe027e8-aa99-471f-8454-7695f676c6d9")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -13628,7 +13622,7 @@
 			(pintype "passive")
 			(uuid "0544a008-f898-496f-9040-57c9cc03a469")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14147,7 +14141,7 @@
 			(pintype "passive")
 			(uuid "decb993d-132a-40f1-92d4-69fc153eb2f0")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -14759,7 +14753,7 @@
 			(pintype "passive")
 			(uuid "d12d3600-4d92-42e7-9119-e99af1281a7e")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15172,7 +15166,7 @@
 			(pintype "passive")
 			(uuid "67a5934a-f4c1-4fa9-84ba-e060761e44fb")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -15742,7 +15736,7 @@
 			(pintype "output")
 			(uuid "a69f23bc-6c49-4d77-a73f-e938010b2136")
 		)
-		(model "${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.wrl"
+		(model "${KICAD8_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-14_4.4x5mm_P0.65mm.wrl"
 			(offset
 				(xyz 0 0 0)
 			)
