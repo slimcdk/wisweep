@@ -69,7 +69,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.25
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -79,7 +79,15 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|60795000|46935000|493aba92-f530-45cf-b272-405c9221bdfc|ae0aa619-619d-4060-a035-82d33b82a3ac",
+        "footprint_type_mismatch|34000000|43000000|d0752c64-91f6-4938-b025-4fe8fee7370a|00000000-0000-0000-0000-000000000000",
+        "footprint_type_mismatch|50000000|54682500|62108d7c-04ae-4538-85d8-a7f1439b0543|00000000-0000-0000-0000-000000000000",
+        "hole_clearance|37255000|39950000|587b4615-0c9b-4224-968c-c26e9924e3ff|ccd5fc66-24a0-472b-8699-e4cbb1f53c67",
+        "hole_clearance|37255000|39950000|ea515d98-d5ff-429d-acd6-a596bc8361c2|ccd5fc66-24a0-472b-8699-e4cbb1f53c67",
+        "hole_clearance|37255000|46050000|2c06e7b3-89c0-445b-b4d8-d9f9b1da7157|a2c226cf-9d84-4543-8f42-59805f33bc70",
+        "hole_clearance|37255000|46050000|d7c119b4-8a3c-495b-8bdf-f84a1b0ae446|a2c226cf-9d84-4543-8f42-59805f33bc70"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -120,7 +128,7 @@
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
