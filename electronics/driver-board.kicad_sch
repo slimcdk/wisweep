@@ -10103,7 +10103,6 @@
 	)
 	(label "TMC_ENCN"
 		(at 267.97 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10114,7 +10113,6 @@
 	)
 	(label "TMC_REFR"
 		(at 129.54 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10125,7 +10123,6 @@
 	)
 	(label "ESP_GPIO13"
 		(at 139.7 207.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10136,7 +10133,6 @@
 	)
 	(label "TMC_DIAG0"
 		(at 66.04 222.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10147,7 +10143,6 @@
 	)
 	(label "WS_DIN"
 		(at 55.88 260.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10158,7 +10153,6 @@
 	)
 	(label "ESP_GPIO19"
 		(at 139.7 232.41 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10169,7 +10163,6 @@
 	)
 	(label "ESP_GPIO14"
 		(at 139.7 224.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10180,7 +10173,6 @@
 	)
 	(label "USB_DP"
 		(at 154.94 207.01 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10191,7 +10183,6 @@
 	)
 	(label "I2C_SCL"
 		(at 228.6 228.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10202,7 +10193,6 @@
 	)
 	(label "TMC_REFL"
 		(at 168.91 237.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10213,7 +10203,6 @@
 	)
 	(label "ESP_GPIO9"
 		(at 139.7 222.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10224,7 +10213,6 @@
 	)
 	(label "RGB_LED"
 		(at 66.04 209.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10235,7 +10223,6 @@
 	)
 	(label "ESP_GPIO23"
 		(at 139.7 242.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10246,7 +10233,6 @@
 	)
 	(label "ESP_GPIO0"
 		(at 78.74 204.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10257,7 +10243,6 @@
 	)
 	(label "AS_ENCN"
 		(at 255.27 170.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10268,7 +10253,6 @@
 	)
 	(label "TMC_DIAG1"
 		(at 66.04 219.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10279,7 +10263,6 @@
 	)
 	(label "ESP_GPIO18"
 		(at 139.7 229.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10290,7 +10273,6 @@
 	)
 	(label "ESP_GPIO3"
 		(at 78.74 212.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10301,7 +10283,6 @@
 	)
 	(label "TMC_ENCA"
 		(at 267.97 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10312,7 +10293,6 @@
 	)
 	(label "SPI_SDI"
 		(at 207.01 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10323,7 +10303,6 @@
 	)
 	(label "I2C_SDA"
 		(at 228.6 231.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10334,7 +10313,6 @@
 	)
 	(label "ESP_GPIO23"
 		(at 295.91 240.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10345,7 +10323,6 @@
 	)
 	(label "TMC_OV"
 		(at 267.97 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10356,7 +10333,6 @@
 	)
 	(label "ESP_GPIO1"
 		(at 78.74 207.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10367,7 +10343,6 @@
 	)
 	(label "ESP_GPIO22"
 		(at 139.7 240.03 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10378,7 +10353,6 @@
 	)
 	(label "ESP_GPIO2"
 		(at 78.74 209.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10389,7 +10363,6 @@
 	)
 	(label "SPI_SDI"
 		(at 290.83 165.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10400,7 +10373,6 @@
 	)
 	(label "USB_DP"
 		(at 57.15 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10411,7 +10383,6 @@
 	)
 	(label "SPI_SCK"
 		(at 290.83 170.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10422,7 +10393,6 @@
 	)
 	(label "TMC_AIN"
 		(at 267.97 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10433,7 +10403,6 @@
 	)
 	(label "ESP_GPIO1"
 		(at 219.71 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10444,7 +10413,6 @@
 	)
 	(label "TMC_OUT1B"
 		(at 307.34 69.85 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10455,7 +10423,6 @@
 	)
 	(label "ESP_GPIO22"
 		(at 295.91 233.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10466,7 +10433,6 @@
 	)
 	(label "SPI_SCK"
 		(at 207.01 80.01 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10477,7 +10443,6 @@
 	)
 	(label "ESP_GPIO15"
 		(at 139.7 227.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10488,7 +10453,6 @@
 	)
 	(label "ESP_GPIO7"
 		(at 78.74 227.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10499,7 +10463,6 @@
 	)
 	(label "SPI_CSN_TMC"
 		(at 207.01 77.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10510,7 +10473,6 @@
 	)
 	(label "ESP_GPIO17"
 		(at 139.7 201.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10521,7 +10483,6 @@
 	)
 	(label "ESP_GPIO9"
 		(at 295.91 227.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10532,7 +10493,6 @@
 	)
 	(label "TMC_OUT1A"
 		(at 267.97 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10543,7 +10503,6 @@
 	)
 	(label "TMC_DIAG1"
 		(at 207.01 105.41 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10554,7 +10513,6 @@
 	)
 	(label "ESP_UART_TXD"
 		(at 154.94 201.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10565,7 +10523,6 @@
 	)
 	(label "TMC_DRV_EN"
 		(at 66.04 204.47 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10576,7 +10533,6 @@
 	)
 	(label "RGB_LED"
 		(at 64.77 260.35 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10587,7 +10543,6 @@
 	)
 	(label "TMC_OUT2B"
 		(at 307.34 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10598,7 +10553,6 @@
 	)
 	(label "TMC_OUT1A"
 		(at 307.34 74.93 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10609,7 +10563,6 @@
 	)
 	(label "ESP_GPIO12"
 		(at 139.7 209.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10620,7 +10573,6 @@
 	)
 	(label "TMC_ENCA"
 		(at 243.84 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10631,7 +10583,6 @@
 	)
 	(label "USB_DN"
 		(at 57.15 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10642,7 +10593,6 @@
 	)
 	(label "USB_CC2"
 		(at 57.15 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10653,7 +10603,6 @@
 	)
 	(label "ESP_GPIO20"
 		(at 139.7 234.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10664,7 +10613,6 @@
 	)
 	(label "USB_DN"
 		(at 154.94 209.55 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10675,7 +10623,6 @@
 	)
 	(label "ESP_BOOT"
 		(at 153.67 222.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10686,7 +10633,6 @@
 	)
 	(label "SPI_SDI"
 		(at 153.67 224.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10697,7 +10643,6 @@
 	)
 	(label "ESP_GPIO5"
 		(at 78.74 222.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10708,7 +10653,6 @@
 	)
 	(label "TMC_DRV_EN"
 		(at 204.47 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10719,7 +10663,6 @@
 	)
 	(label "TMC_REFR"
 		(at 168.91 234.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10730,7 +10673,6 @@
 	)
 	(label "TMC_DIAG0"
 		(at 207.01 102.87 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10741,7 +10683,6 @@
 	)
 	(label "SPI_SDO"
 		(at 290.83 167.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10752,7 +10693,6 @@
 	)
 	(label "TMC_OUT2B"
 		(at 267.97 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10763,7 +10703,6 @@
 	)
 	(label "ESP_GPIO3"
 		(at 219.71 167.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10774,7 +10713,6 @@
 	)
 	(label "USB_CC1"
 		(at 57.15 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10785,7 +10723,6 @@
 	)
 	(label "TMC_REFR"
 		(at 207.01 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10796,7 +10733,6 @@
 	)
 	(label "ESP_EN"
 		(at 78.74 199.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10807,7 +10743,6 @@
 	)
 	(label "ESP_UART_RXD"
 		(at 154.94 199.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10818,7 +10753,6 @@
 	)
 	(label "TMC_REFL"
 		(at 207.01 90.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10829,7 +10763,6 @@
 	)
 	(label "TMC_OUT2A"
 		(at 307.34 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10840,7 +10773,6 @@
 	)
 	(label "ESP_GPIO6"
 		(at 78.74 224.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10851,7 +10783,6 @@
 	)
 	(label "TMC_ENCN"
 		(at 243.84 170.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10862,7 +10793,6 @@
 	)
 	(label "SPI_CSN_AS"
 		(at 66.04 227.33 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10873,7 +10803,6 @@
 	)
 	(label "ESP_GPIO8"
 		(at 139.7 219.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10884,7 +10813,6 @@
 	)
 	(label "SPI_SDO"
 		(at 207.01 85.09 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10895,7 +10823,6 @@
 	)
 	(label "TMC_ENCB"
 		(at 243.84 167.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10906,7 +10833,6 @@
 	)
 	(label "TMC_OUT1B"
 		(at 267.97 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10917,7 +10843,6 @@
 	)
 	(label "SPI_CSN_AS"
 		(at 290.83 172.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10928,7 +10853,6 @@
 	)
 	(label "ESP_GPIO21"
 		(at 139.7 237.49 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10939,7 +10863,6 @@
 	)
 	(label "ESP_GPIO16"
 		(at 139.7 199.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10950,7 +10873,6 @@
 	)
 	(label "SPI_SDO"
 		(at 66.04 224.79 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10961,7 +10883,6 @@
 	)
 	(label "I2C_SDA"
 		(at 171.45 201.93 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10972,7 +10893,6 @@
 	)
 	(label "AS_ENCB"
 		(at 255.27 167.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10983,7 +10903,6 @@
 	)
 	(label "TMC_OUT2A"
 		(at 267.97 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10994,7 +10913,6 @@
 	)
 	(label "SPI_CSN_TMC"
 		(at 153.67 227.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11005,7 +10923,6 @@
 	)
 	(label "SPI_SCK"
 		(at 153.67 219.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11016,7 +10933,6 @@
 	)
 	(label "TMC_ENCB"
 		(at 267.97 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11027,7 +10943,6 @@
 	)
 	(label "USB_DP"
 		(at 57.15 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11038,7 +10953,6 @@
 	)
 	(label "ESP_GPIO4"
 		(at 78.74 219.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11049,7 +10963,6 @@
 	)
 	(label "I2C_SCL"
 		(at 171.45 199.39 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11060,7 +10973,6 @@
 	)
 	(label "TMC_REFL"
 		(at 132.08 125.73 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11071,7 +10983,6 @@
 	)
 	(label "AS_ENCA"
 		(at 255.27 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11082,7 +10993,6 @@
 	)
 	(label "USB_DN"
 		(at 57.15 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -12156,9 +12066,9 @@
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "106d5ce3-abfc-4f62-9a71-d799c1edfff0")
 		(property "Reference" "#PWR022"
 			(at 151.13 86.36 0)
@@ -14642,9 +14552,9 @@
 		(at 120.65 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "55377a4f-bd72-4d3a-ad03-83ee6d20a66e")
 		(property "Reference" "C19"
 			(at 120.65 100.076 0)
@@ -16647,9 +16557,9 @@
 		(at 113.03 92.71 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "801837a5-c265-4ece-bb39-5e2bb4f31070")
 		(property "Reference" "C21"
 			(at 113.03 99.822 0)
@@ -16882,9 +16792,9 @@
 		(at 143.51 92.71 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "85c8ca4b-4e25-48eb-a0b0-206f0bbfdc5e")
 		(property "Reference" "C20"
 			(at 143.51 99.822 0)
@@ -18671,9 +18581,9 @@
 		(at 132.08 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "b186e0e8-483d-4c90-aa20-397e769f63f7")
 		(property "Reference" "U2"
@@ -20121,9 +20031,9 @@
 		(at 113.03 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "dca3ee89-b780-4de5-9b60-4c664aea886c")
 		(property "Reference" "#PWR027"
@@ -20784,9 +20694,9 @@
 		(at 132.08 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "f254d1c5-8702-4b41-814f-d08c5b88cd0a")
 		(property "Reference" "#PWR024"
 			(at 132.08 107.95 0)
@@ -20849,9 +20759,9 @@
 		(at 151.13 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "f578fcf0-255d-4afe-ab4a-aca5178b6894")
 		(property "Reference" "C23"
 			(at 151.13 100.076 0)
@@ -21065,7 +20975,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_C_Receptacle_JAE_DX07S024WJ3R400"
+		(property "Footprint" "Slimc_Connector_USB:USB_C_GT-USB-7036A"
 			(at 43.18 76.2 0)
 			(effects
 				(font
