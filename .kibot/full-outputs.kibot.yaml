@@ -21,6 +21,8 @@ global:
         value: dependencies/kicad-libraries/slimc/3d-packages
       - name: ESPRESSIF_3DMODELS
         value: dependencies/kicad-libraries/espressif-kicad-libraries/3dmodels/espressif.3dshapes
+      - name: SPARKFUN_KICAD_LIBRARY
+        value: dependencies/kicad-libraries/SparkFun-KiCad-Libraries
 
   field_lcsc_part: LCSC
   field_tolerance: Tolerance
